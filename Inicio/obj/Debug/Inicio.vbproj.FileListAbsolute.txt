@@ -1,0 +1,28 @@
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\bin\Debug\Inicio.exe.config
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\bin\Debug\Inicio.exe
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\bin\Debug\Inicio.pdb
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\bin\Debug\Inicio.xml
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.vbprojResolveAssemblyReference.cache
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.Form1.resources
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.Resources.resources
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.vbproj.GenerateResource.Cache
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.exe
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.xml
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.pdb
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.inicio.resources
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.salon.resources
+c:\users\pc\documents\visual studio 2015\Projects\Inicio\Inicio\obj\Debug\Inicio.pedido.resources
+C:\Users\user\Desktop\maxirest\Inicio\bin\Debug\Inicio.exe.config
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.exe
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.xml
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.pdb
+C:\Users\user\Desktop\maxirest\Inicio\bin\Debug\Inicio.exe
+C:\Users\user\Desktop\maxirest\Inicio\bin\Debug\Inicio.pdb
+C:\Users\user\Desktop\maxirest\Inicio\bin\Debug\Inicio.xml
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.vbprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.Form1.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.inicio.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.Resources.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.pedido.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.salon.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.vbproj.GenerateResource.Cache
