@@ -26,3 +26,17 @@ C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.Resources.resources
 C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.pedido.resources
 C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.salon.resources
 C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.vbproj.GenerateResource.Cache
+C:\Users\PC\Documents\maxirest\Inicio\bin\Debug\Inicio.exe.config
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.exe
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.xml
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.pdb
+C:\Users\PC\Documents\maxirest\Inicio\bin\Debug\Inicio.exe
+C:\Users\PC\Documents\maxirest\Inicio\bin\Debug\Inicio.pdb
+C:\Users\PC\Documents\maxirest\Inicio\bin\Debug\Inicio.xml
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.vbprojResolveAssemblyReference.cache
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.Form1.resources
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.inicio.resources
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.Resources.resources
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.pedido.resources
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.salon.resources
+C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.vbproj.GenerateResource.Cache

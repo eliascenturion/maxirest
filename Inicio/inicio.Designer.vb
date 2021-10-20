@@ -24,41 +24,32 @@ Partial Class inicio
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(inicio))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnAbrirTurno = New System.Windows.Forms.Button()
         Me.btnCargos = New System.Windows.Forms.Button()
         Me.btnStock = New System.Windows.Forms.Button()
+        Me.btnAbrirTurno = New System.Windows.Forms.Button()
         Me.PanelMain = New System.Windows.Forms.Panel()
+        Me.Panel = New System.Windows.Forms.Panel()
+        Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LabelUsuario = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
+        Me.PanelMain.SuspendLayout()
+        Me.Panel.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkOrange
-        Me.Panel1.Controls.Add(Me.btnAbrirTurno)
         Me.Panel1.Controls.Add(Me.btnCargos)
         Me.Panel1.Controls.Add(Me.btnStock)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(199, 797)
         Me.Panel1.TabIndex = 5
-        '
-        'btnAbrirTurno
-        '
-        Me.btnAbrirTurno.BackColor = System.Drawing.Color.DimGray
-        Me.btnAbrirTurno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnAbrirTurno.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAbrirTurno.FlatAppearance.BorderSize = 0
-        Me.btnAbrirTurno.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnAbrirTurno.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAbrirTurno.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnAbrirTurno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAbrirTurno.Location = New System.Drawing.Point(15, 51)
-        Me.btnAbrirTurno.Name = "btnAbrirTurno"
-        Me.btnAbrirTurno.Size = New System.Drawing.Size(164, 43)
-        Me.btnAbrirTurno.TabIndex = 6
-        Me.btnAbrirTurno.Text = "Abrir Turno"
-        Me.btnAbrirTurno.UseVisualStyleBackColor = False
         '
         'btnCargos
         '
@@ -98,13 +89,101 @@ Partial Class inicio
         Me.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnStock.UseVisualStyleBackColor = False
         '
+        'btnAbrirTurno
+        '
+        Me.btnAbrirTurno.BackColor = System.Drawing.Color.DimGray
+        Me.btnAbrirTurno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAbrirTurno.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAbrirTurno.FlatAppearance.BorderSize = 0
+        Me.btnAbrirTurno.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnAbrirTurno.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAbrirTurno.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnAbrirTurno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAbrirTurno.Location = New System.Drawing.Point(216, 130)
+        Me.btnAbrirTurno.Name = "btnAbrirTurno"
+        Me.btnAbrirTurno.Size = New System.Drawing.Size(117, 30)
+        Me.btnAbrirTurno.TabIndex = 6
+        Me.btnAbrirTurno.Text = "Abrir Turno"
+        Me.btnAbrirTurno.UseVisualStyleBackColor = False
+        '
         'PanelMain
         '
         Me.PanelMain.BackColor = System.Drawing.Color.SlateGray
+        Me.PanelMain.Controls.Add(Me.Panel)
         Me.PanelMain.Location = New System.Drawing.Point(198, 0)
         Me.PanelMain.Name = "PanelMain"
         Me.PanelMain.Size = New System.Drawing.Size(1656, 726)
         Me.PanelMain.TabIndex = 6
+        '
+        'Panel
+        '
+        Me.Panel.BackColor = System.Drawing.Color.DarkOrange
+        Me.Panel.Controls.Add(Me.btnCancelar)
+        Me.Panel.Controls.Add(Me.DateTimePicker1)
+        Me.Panel.Controls.Add(Me.btnAbrirTurno)
+        Me.Panel.Controls.Add(Me.Panel4)
+        Me.Panel.Controls.Add(Me.LabelUsuario)
+        Me.Panel.Location = New System.Drawing.Point(256, 125)
+        Me.Panel.Name = "Panel"
+        Me.Panel.Size = New System.Drawing.Size(393, 190)
+        Me.Panel.TabIndex = 7
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.BackColor = System.Drawing.Color.DimGray
+        Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FlatAppearance.BorderSize = 0
+        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnCancelar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCancelar.Location = New System.Drawing.Point(64, 130)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(117, 30)
+        Me.btnCancelar.TabIndex = 7
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = False
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(131, 80)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(218, 20)
+        Me.DateTimePicker1.TabIndex = 5
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Panel4.Controls.Add(Me.Label1)
+        Me.Panel4.Location = New System.Drawing.Point(0, 18)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(393, 32)
+        Me.Panel4.TabIndex = 4
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label1.Font = New System.Drawing.Font("Microsoft JhengHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label1.Location = New System.Drawing.Point(61, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(277, 16)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Confirme los datos para abrir un nuevo turno"
+        '
+        'LabelUsuario
+        '
+        Me.LabelUsuario.AutoSize = True
+        Me.LabelUsuario.BackColor = System.Drawing.Color.DarkOrange
+        Me.LabelUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LabelUsuario.Location = New System.Drawing.Point(60, 78)
+        Me.LabelUsuario.Name = "LabelUsuario"
+        Me.LabelUsuario.Size = New System.Drawing.Size(65, 22)
+        Me.LabelUsuario.TabIndex = 0
+        Me.LabelUsuario.Text = "Fecha"
         '
         'Panel2
         '
@@ -128,6 +207,11 @@ Partial Class inicio
         Me.Name = "inicio"
         Me.Text = "inicio"
         Me.Panel1.ResumeLayout(False)
+        Me.PanelMain.ResumeLayout(False)
+        Me.Panel.ResumeLayout(False)
+        Me.Panel.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -138,4 +222,10 @@ Partial Class inicio
     Friend WithEvents btnStock As Button
     Friend WithEvents btnAbrirTurno As Button
     Friend WithEvents PanelMain As Panel
+    Friend WithEvents Panel As Panel
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents LabelUsuario As Label
+    Friend WithEvents btnCancelar As Button
 End Class
