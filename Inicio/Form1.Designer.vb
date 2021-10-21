@@ -48,9 +48,10 @@ Partial Class Form1
         Me.Panel.Controls.Add(Me.TextBox1)
         Me.Panel.Controls.Add(Me.LabelContraseña)
         Me.Panel.Controls.Add(Me.LabelUsuario)
-        Me.Panel.Location = New System.Drawing.Point(469, 265)
+        Me.Panel.Location = New System.Drawing.Point(625, 326)
+        Me.Panel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel.Name = "Panel"
-        Me.Panel.Size = New System.Drawing.Size(393, 190)
+        Me.Panel.Size = New System.Drawing.Size(524, 234)
         Me.Panel.TabIndex = 2
         '
         'btnAceptar
@@ -61,9 +62,10 @@ Partial Class Form1
         Me.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAceptar.FlatAppearance.BorderSize = 0
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAceptar.Location = New System.Drawing.Point(308, 134)
+        Me.btnAceptar.Location = New System.Drawing.Point(411, 165)
+        Me.btnAceptar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(59, 44)
+        Me.btnAceptar.Size = New System.Drawing.Size(79, 54)
         Me.btnAceptar.TabIndex = 3
         Me.btnAceptar.UseVisualStyleBackColor = False
         '
@@ -72,18 +74,20 @@ Partial Class Form1
         Me.Panel2.BackColor = System.Drawing.Color.DarkOrange
         Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel2.Location = New System.Drawing.Point(8, 0)
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(67, 60)
+        Me.Panel2.Size = New System.Drawing.Size(100, 74)
         Me.Panel2.TabIndex = 3
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Location = New System.Drawing.Point(0, 14)
+        Me.Panel3.Location = New System.Drawing.Point(0, 17)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(393, 18)
+        Me.Panel3.Size = New System.Drawing.Size(524, 22)
         Me.Panel3.TabIndex = 4
         '
         'Label1
@@ -92,24 +96,29 @@ Partial Class Form1
         Me.Label1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Label1.Font = New System.Drawing.Font("Microsoft JhengHei", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label1.Location = New System.Drawing.Point(188, 2)
+        Me.Label1.Location = New System.Drawing.Point(251, 2)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 15)
+        Me.Label1.Size = New System.Drawing.Size(115, 16)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "INICIO DE SESIÓN"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(166, 93)
+        Me.TextBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.TextBox2.Location = New System.Drawing.Point(221, 114)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(201, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(267, 22)
         Me.TextBox2.TabIndex = 3
+        Me.TextBox2.UseSystemPasswordChar = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(166, 54)
+        Me.TextBox1.Location = New System.Drawing.Point(221, 66)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(201, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(267, 22)
         Me.TextBox1.TabIndex = 2
         '
         'LabelContraseña
@@ -118,9 +127,10 @@ Partial Class Form1
         Me.LabelContraseña.BackColor = System.Drawing.Color.DarkOrange
         Me.LabelContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelContraseña.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LabelContraseña.Location = New System.Drawing.Point(47, 93)
+        Me.LabelContraseña.Location = New System.Drawing.Point(63, 114)
+        Me.LabelContraseña.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelContraseña.Name = "LabelContraseña"
-        Me.LabelContraseña.Size = New System.Drawing.Size(113, 22)
+        Me.LabelContraseña.Size = New System.Drawing.Size(134, 26)
         Me.LabelContraseña.TabIndex = 1
         Me.LabelContraseña.Text = "Contraseña"
         '
@@ -130,9 +140,10 @@ Partial Class Form1
         Me.LabelUsuario.BackColor = System.Drawing.Color.DarkOrange
         Me.LabelUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LabelUsuario.Location = New System.Drawing.Point(81, 54)
+        Me.LabelUsuario.Location = New System.Drawing.Point(108, 66)
+        Me.LabelUsuario.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelUsuario.Name = "LabelUsuario"
-        Me.LabelUsuario.Size = New System.Drawing.Size(79, 22)
+        Me.LabelUsuario.Size = New System.Drawing.Size(94, 26)
         Me.LabelUsuario.TabIndex = 0
         Me.LabelUsuario.Text = "Usuario"
         '
@@ -141,17 +152,19 @@ Partial Class Form1
         Me.PanelMains.BackColor = System.Drawing.Color.Orange
         Me.PanelMains.Controls.Add(Me.Panel)
         Me.PanelMains.Location = New System.Drawing.Point(0, -2)
+        Me.PanelMains.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelMains.Name = "PanelMains"
-        Me.PanelMains.Size = New System.Drawing.Size(1656, 726)
+        Me.PanelMains.Size = New System.Drawing.Size(2208, 894)
         Me.PanelMains.TabIndex = 3
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.ClientSize = New System.Drawing.Size(1247, 688)
+        Me.ClientSize = New System.Drawing.Size(1663, 847)
         Me.Controls.Add(Me.PanelMains)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.Panel.ResumeLayout(False)

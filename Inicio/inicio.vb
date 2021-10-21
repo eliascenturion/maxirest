@@ -1,4 +1,5 @@
-﻿Public Class inicio
+﻿Imports MySql.Data.MySqlClient
+Public Class inicio
     Private Sub AbrirFormulario(ByRef formhijo As Object)
         If PanelMain.Controls.Count > 0 Then
             PanelMain.Controls.RemoveAt(0)
@@ -14,6 +15,23 @@
     End Sub
 
     Private Sub btnAbrirTurno_Click(sender As Object, e As EventArgs) Handles btnAbrirTurno.Click
-        AbrirFormulario(New salon)
+        consulta = "INSERT INTO turnos (id_admin) VALUES (" + idUser + ")"
+        Try
+            Module1.conexion.Open()
+            Dim cmd As New MySqlCommand(consulta, conexion)
+            cmd.ExecuteNonQuery()
+            AbrirFormulario(New salon)
+        Catch ex As Exception
+            MsgBox(ex.Message.ToString)
+        Finally
+            Module1.conexion.Close()
+        End Try
+
     End Sub
+
+    Private Sub PanelMain_Paint(sender As Object, e As PaintEventArgs) Handles PanelMain.Paint
+
+    End Sub
+
+
 End Class
