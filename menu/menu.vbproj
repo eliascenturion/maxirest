@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2036DAF7-E0F7-44CC-B805-61F846755153}</ProjectGuid>
+    <ProjectGuid>{1EB743CC-6B74-428F-940D-44E97FD03A84}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Inicio.My.MyApplication</StartupObject>
-    <RootNamespace>Inicio</RootNamespace>
-    <AssemblyName>Inicio</AssemblyName>
+    <StartupObject>menu.My.MyApplication</StartupObject>
+    <RootNamespace>menu</RootNamespace>
+    <AssemblyName>menu</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Inicio.xml</DocumentationFile>
+    <DocumentationFile>menu.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Inicio.xml</DocumentationFile>
+    <DocumentationFile>menu.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -47,7 +47,6 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -80,19 +79,6 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="inicio.Designer.vb">
-      <DependentUpon>inicio.vb</DependentUpon>
-    </Compile>
-    <Compile Include="inicio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menu.Designer.vb">
-      <DependentUpon>Menu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Menu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -108,40 +94,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="pedido.Designer.vb">
-      <DependentUpon>pedido.vb</DependentUpon>
-    </Compile>
-    <Compile Include="pedido.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="salon.Designer.vb">
-      <DependentUpon>salon.vb</DependentUpon>
-    </Compile>
-    <Compile Include="salon.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="inicio.resx">
-      <DependentUpon>inicio.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pedido.resx">
-      <DependentUpon>pedido.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="salon.resx">
-      <DependentUpon>salon.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -155,15 +117,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\confirm-1174801_960_720.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\png-clipart-table-reservation-computer-icons-restaurant-colorful-table-furniture-food.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\zyro-image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
