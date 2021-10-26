@@ -28,10 +28,7 @@ Public Class inicio
         End Try
 
     End Sub
-
-    Private Sub PanelMain_Paint(sender As Object, e As PaintEventArgs) Handles PanelMain.Paint
+    Private Sub btnStock_Click(sender As Object, e As EventArgs) Handles btnStock.Click
 
     End Sub
-
-
 End Class

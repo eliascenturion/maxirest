@@ -45,9 +45,8 @@ Partial Class inicio
         Me.Panel1.Controls.Add(Me.btnCargos)
         Me.Panel1.Controls.Add(Me.btnStock)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(265, 981)
+        Me.Panel1.Size = New System.Drawing.Size(199, 797)
         Me.Panel1.TabIndex = 5
         '
         'btnCargos
@@ -61,10 +60,9 @@ Partial Class inicio
         Me.btnCargos.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCargos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnCargos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCargos.Location = New System.Drawing.Point(-67, 251)
-        Me.btnCargos.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCargos.Location = New System.Drawing.Point(-50, 204)
         Me.btnCargos.Name = "btnCargos"
-        Me.btnCargos.Size = New System.Drawing.Size(333, 84)
+        Me.btnCargos.Size = New System.Drawing.Size(250, 68)
         Me.btnCargos.TabIndex = 8
         Me.btnCargos.Text = "Empleados"
         Me.btnCargos.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -81,10 +79,9 @@ Partial Class inicio
         Me.btnStock.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStock.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnStock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnStock.Location = New System.Drawing.Point(0, 154)
-        Me.btnStock.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnStock.Location = New System.Drawing.Point(0, 125)
         Me.btnStock.Name = "btnStock"
-        Me.btnStock.Size = New System.Drawing.Size(267, 73)
+        Me.btnStock.Size = New System.Drawing.Size(200, 59)
         Me.btnStock.TabIndex = 7
         Me.btnStock.Text = "Stock"
         Me.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -100,10 +97,9 @@ Partial Class inicio
         Me.btnAbrirTurno.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAbrirTurno.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnAbrirTurno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAbrirTurno.Location = New System.Drawing.Point(315, 121)
-        Me.btnAbrirTurno.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAbrirTurno.Location = New System.Drawing.Point(236, 98)
         Me.btnAbrirTurno.Name = "btnAbrirTurno"
-        Me.btnAbrirTurno.Size = New System.Drawing.Size(156, 37)
+        Me.btnAbrirTurno.Size = New System.Drawing.Size(117, 30)
         Me.btnAbrirTurno.TabIndex = 6
         Me.btnAbrirTurno.Text = "Abrir Turno"
         Me.btnAbrirTurno.UseVisualStyleBackColor = False
@@ -112,10 +108,9 @@ Partial Class inicio
         '
         Me.PanelMain.BackColor = System.Drawing.Color.SlateGray
         Me.PanelMain.Controls.Add(Me.Panel)
-        Me.PanelMain.Location = New System.Drawing.Point(264, 0)
-        Me.PanelMain.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelMain.Location = New System.Drawing.Point(198, 0)
         Me.PanelMain.Name = "PanelMain"
-        Me.PanelMain.Size = New System.Drawing.Size(2208, 894)
+        Me.PanelMain.Size = New System.Drawing.Size(1656, 726)
         Me.PanelMain.TabIndex = 6
         '
         'Panel
@@ -124,10 +119,9 @@ Partial Class inicio
         Me.Panel.Controls.Add(Me.btnCancelar)
         Me.Panel.Controls.Add(Me.btnAbrirTurno)
         Me.Panel.Controls.Add(Me.Panel4)
-        Me.Panel.Location = New System.Drawing.Point(341, 154)
-        Me.Panel.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel.Location = New System.Drawing.Point(256, 125)
         Me.Panel.Name = "Panel"
-        Me.Panel.Size = New System.Drawing.Size(524, 234)
+        Me.Panel.Size = New System.Drawing.Size(393, 190)
         Me.Panel.TabIndex = 7
         '
         'btnCancelar
@@ -140,10 +134,9 @@ Partial Class inicio
         Me.btnCancelar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancelar.Location = New System.Drawing.Point(49, 121)
-        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCancelar.Location = New System.Drawing.Point(37, 98)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(207, 37)
+        Me.btnCancelar.Size = New System.Drawing.Size(155, 30)
         Me.btnCancelar.TabIndex = 7
         Me.btnCancelar.Text = "Cerrar aplicacion"
         Me.btnCancelar.UseVisualStyleBackColor = False
@@ -152,10 +145,9 @@ Partial Class inicio
         '
         Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel4.Controls.Add(Me.Label1)
-        Me.Panel4.Location = New System.Drawing.Point(0, 22)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel4.Location = New System.Drawing.Point(0, 18)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(524, 39)
+        Me.Panel4.Size = New System.Drawing.Size(393, 32)
         Me.Panel4.TabIndex = 4
         '
         'Label1
@@ -164,10 +156,9 @@ Partial Class inicio
         Me.Label1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Label1.Font = New System.Drawing.Font("Microsoft JhengHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label1.Location = New System.Drawing.Point(81, 11)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(61, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(335, 19)
+        Me.Label1.Size = New System.Drawing.Size(277, 16)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Confirme los datos para abrir un nuevo turno"
         '
@@ -176,22 +167,20 @@ Partial Class inicio
         Me.Panel2.BackColor = System.Drawing.SystemColors.ControlDark
         Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel2.Location = New System.Drawing.Point(16, 1)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel2.Location = New System.Drawing.Point(12, 1)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(89, 74)
+        Me.Panel2.Size = New System.Drawing.Size(67, 60)
         Me.Panel2.TabIndex = 4
         '
         'inicio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(1663, 847)
+        Me.ClientSize = New System.Drawing.Size(1028, 609)
         Me.Controls.Add(Me.PanelMain)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "inicio"
         Me.Text = "inicio"
         Me.Panel1.ResumeLayout(False)
