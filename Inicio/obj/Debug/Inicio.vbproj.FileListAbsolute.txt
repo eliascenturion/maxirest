@@ -62,3 +62,5 @@ C:\Users\PC\Documents\maxirest\Inicio\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\PC\Documents\maxirest\Inicio\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\PC\Documents\maxirest\Inicio\bin\Debug\MySql.Data.xml
 C:\Users\PC\Documents\maxirest\Inicio\obj\Debug\Inicio.Menu.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.Menu.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.stock.resources
