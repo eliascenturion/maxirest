@@ -22,12 +22,12 @@ Public Class stock
         ListViewProductos.Items.Clear()
         Try
             Module1.conexion.Open()
-            Dim cmdCursada As New MySqlCommand()
-            cmdCursada.Connection = conexion
-            cmdCursada.CommandType = CommandType.Text
-            cmdCursada.CommandText = "SELECT P.id as id_producto, P.nombre as nombre_producto, p.stock, P.precio, P.id_categoria as id_categoria_p, C.id as id_categoria, C.nombre as nombre_categoria FROM productos P inner join categorias C on P.id_categoria= C.id;"
+            Dim cmdStock As New MySqlCommand()
+            cmdStock.Connection = conexion
+            cmdStock.CommandType = CommandType.Text
+            cmdStock.CommandText = "SELECT P.id as id_producto, P.nombre as nombre_producto, p.stock, P.precio, P.id_categoria as id_categoria_p, C.id as id_categoria, C.nombre as nombre_categoria FROM productos P inner join categorias C on P.id_categoria= C.id;"
             Dim readCursada As MySqlDataReader
-            readCursada = cmdCursada.ExecuteReader
+            readCursada = cmdStock.ExecuteReader
             Do While readCursada.Read()
                 Dim fila As ListViewItem
                 fila = ListViewProductos.Items.Add(readCursada("id_producto"))
@@ -68,12 +68,13 @@ Public Class stock
     Private Sub crud()
         Select Case accion
             Case "insert"
-                consulta = "INSERT INTO productos values (" + txtCodigo.Text + ",'" + txtNombre.Text + "'," + txtPrecio.Text + "," + txtCantidad.Text + "," + cbCategoria.Text + ")"
+                consulta = "INSERT INTO productos values (" + txtCodigo.Text + ",'" + txtNombre.Text + "'," + txtPrecio.Text + "," + txtCantidad.Text + "," + cbCategoria.SelectedValue.ToString + ")"
                 limpiar()
+                cargarlistado()
                 MsgBox("Datos agregados")
-                'Case "update"
-                '    consulta = "update cursa set ciclo='" + txtCiclo.Text + "' ,idalumno='" + cbAlumno.SelectedValue.ToString + "' ,idmateria='" + cbMateria.SelectedValue.ToString + "' ,idprofesor='" + lblProfesor.Text + "' ,situacion='" + cbSituacion.SelectedValue.ToString + "' ,parcial1='" + cbParcial1.SelectedValue.ToString + "' ,parcial2='" + cbParcial2.SelectedValue.ToString + "' ,notafinal='" + cbNotaFinal.SelectedValue.ToString + "' WHERE idmateria='" + cbMateria.SelectedValue.ToString + "' AND idalumno='" + cbAlumno.SelectedValue.ToString + "' AND ciclo='" + txtCiclo.Text + "'"
-                '    MsgBox("Datos modificados")
+            Case "update"
+                consulta = "UPDATE SET productos SET "
+                MsgBox("Datos modificados")
                 'Case "delete"
                 '    consulta = "delete from cursa where idmateria=" + cbMateria.SelectedValue.ToString + "AND idalumno=" + cbAlumno.SelectedValue.ToString + " AND ciclo=" + txtCiclo.Text + ""
                 '    MsgBox("Datos eliminados")

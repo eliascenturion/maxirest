@@ -37,7 +37,7 @@ Partial Class pedido
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Calculadora = New System.Windows.Forms.Panel()
         Me.Button17 = New System.Windows.Forms.Button()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
@@ -50,7 +50,14 @@ Partial Class pedido
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Button19 = New System.Windows.Forms.Button()
+        Me.Button20 = New System.Windows.Forms.Button()
+        Me.Button21 = New System.Windows.Forms.Button()
+        Me.Button22 = New System.Windows.Forms.Button()
+        Me.Menu = New System.Windows.Forms.PictureBox()
+        Me.Calculadora.SuspendLayout()
+        CType(Me.Menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ListViewPedido
@@ -192,27 +199,27 @@ Partial Class pedido
         Me.TextBox1.Size = New System.Drawing.Size(144, 24)
         Me.TextBox1.TabIndex = 11
         '
-        'Panel1
+        'Calculadora
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DarkGray
-        Me.Panel1.Controls.Add(Me.Button17)
-        Me.Panel1.Controls.Add(Me.Button16)
-        Me.Panel1.Controls.Add(Me.Button15)
-        Me.Panel1.Controls.Add(Me.Button14)
-        Me.Panel1.Controls.Add(Me.Button13)
-        Me.Panel1.Controls.Add(Me.Button12)
-        Me.Panel1.Controls.Add(Me.Button11)
-        Me.Panel1.Controls.Add(Me.Button10)
-        Me.Panel1.Controls.Add(Me.Button9)
-        Me.Panel1.Controls.Add(Me.Button8)
-        Me.Panel1.Controls.Add(Me.Button7)
-        Me.Panel1.Controls.Add(Me.Button6)
-        Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Location = New System.Drawing.Point(281, 364)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(178, 254)
-        Me.Panel1.TabIndex = 12
+        Me.Calculadora.BackColor = System.Drawing.Color.DarkGray
+        Me.Calculadora.Controls.Add(Me.Button17)
+        Me.Calculadora.Controls.Add(Me.Button16)
+        Me.Calculadora.Controls.Add(Me.Button15)
+        Me.Calculadora.Controls.Add(Me.Button14)
+        Me.Calculadora.Controls.Add(Me.Button13)
+        Me.Calculadora.Controls.Add(Me.Button12)
+        Me.Calculadora.Controls.Add(Me.Button11)
+        Me.Calculadora.Controls.Add(Me.Button10)
+        Me.Calculadora.Controls.Add(Me.Button9)
+        Me.Calculadora.Controls.Add(Me.Button8)
+        Me.Calculadora.Controls.Add(Me.Button7)
+        Me.Calculadora.Controls.Add(Me.Button6)
+        Me.Calculadora.Controls.Add(Me.TextBox1)
+        Me.Calculadora.Controls.Add(Me.Label2)
+        Me.Calculadora.Location = New System.Drawing.Point(272, 365)
+        Me.Calculadora.Name = "Calculadora"
+        Me.Calculadora.Size = New System.Drawing.Size(178, 254)
+        Me.Calculadora.TabIndex = 12
         '
         'Button17
         '
@@ -335,13 +342,81 @@ Partial Class pedido
         Me.Button6.Text = "7"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'Button18
+        '
+        Me.Button18.BackColor = System.Drawing.Color.Yellow
+        Me.Button18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button18.Location = New System.Drawing.Point(777, 25)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(77, 67)
+        Me.Button18.TabIndex = 17
+        Me.Button18.Text = "Bebidas"
+        Me.Button18.UseVisualStyleBackColor = False
+        '
+        'Button19
+        '
+        Me.Button19.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button19.Location = New System.Drawing.Point(704, 25)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(77, 67)
+        Me.Button19.TabIndex = 16
+        Me.Button19.Text = "Cervezas"
+        Me.Button19.UseVisualStyleBackColor = False
+        '
+        'Button20
+        '
+        Me.Button20.BackColor = System.Drawing.Color.Yellow
+        Me.Button20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button20.Location = New System.Drawing.Point(632, 25)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(77, 67)
+        Me.Button20.TabIndex = 15
+        Me.Button20.Text = "Fritas"
+        Me.Button20.UseVisualStyleBackColor = False
+        '
+        'Button21
+        '
+        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button21.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button21.Location = New System.Drawing.Point(559, 25)
+        Me.Button21.Name = "Button21"
+        Me.Button21.Size = New System.Drawing.Size(77, 67)
+        Me.Button21.TabIndex = 14
+        Me.Button21.Text = "Hamb"
+        Me.Button21.UseVisualStyleBackColor = False
+        '
+        'Button22
+        '
+        Me.Button22.BackColor = System.Drawing.Color.Yellow
+        Me.Button22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button22.Location = New System.Drawing.Point(486, 25)
+        Me.Button22.Name = "Button22"
+        Me.Button22.Size = New System.Drawing.Size(77, 67)
+        Me.Button22.TabIndex = 13
+        Me.Button22.Text = "Pizzas"
+        Me.Button22.UseVisualStyleBackColor = False
+        '
+        'Menu
+        '
+        Me.Menu.Location = New System.Drawing.Point(456, 12)
+        Me.Menu.Name = "Menu"
+        Me.Menu.Size = New System.Drawing.Size(439, 96)
+        Me.Menu.TabIndex = 18
+        Me.Menu.TabStop = False
+        '
         'pedido
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(462, 619)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(904, 619)
+        Me.Controls.Add(Me.Button18)
+        Me.Controls.Add(Me.Button19)
+        Me.Controls.Add(Me.Button20)
+        Me.Controls.Add(Me.Button21)
+        Me.Controls.Add(Me.Button22)
+        Me.Controls.Add(Me.Calculadora)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -350,10 +425,12 @@ Partial Class pedido
         Me.Controls.Add(Me.TextBoxTotal)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ListViewPedido)
+        Me.Controls.Add(Me.Menu)
         Me.Name = "pedido"
         Me.Text = "pedido"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.Calculadora.ResumeLayout(False)
+        Me.Calculadora.PerformLayout()
+        CType(Me.Menu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -373,7 +450,7 @@ Partial Class pedido
     Friend WithEvents Button5 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Calculadora As Panel
     Friend WithEvents Button7 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button8 As Button
@@ -386,4 +463,10 @@ Partial Class pedido
     Friend WithEvents Button11 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents Button9 As Button
+    Friend WithEvents Button18 As Button
+    Friend WithEvents Button19 As Button
+    Friend WithEvents Button20 As Button
+    Friend WithEvents Button21 As Button
+    Friend WithEvents Button22 As Button
+    Friend WithEvents Menu As PictureBox
 End Class

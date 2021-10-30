@@ -23,51 +23,29 @@ Partial Class stock
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(stock))
-        Me.btnBorrar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.lblCarrera = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ListViewProductos = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnBorrar = New System.Windows.Forms.Button()
+        Me.txtCodigo = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtPrecio = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.cbCategoria = New System.Windows.Forms.ComboBox()
         Me.txtCantidad = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ListViewProductos = New System.Windows.Forms.ListView()
-        Me.id = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.nombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.a = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.v = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtPrecio = New System.Windows.Forms.TextBox()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.txtCodigo = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.c = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.d = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.z = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
-        '
-        'btnBorrar
-        '
-        Me.btnBorrar.BackColor = System.Drawing.Color.Transparent
-        Me.btnBorrar.BackgroundImage = CType(resources.GetObject("btnBorrar.BackgroundImage"), System.Drawing.Image)
-        Me.btnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBorrar.FlatAppearance.BorderSize = 0
-        Me.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrar.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnBorrar.Location = New System.Drawing.Point(1015, 400)
-        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(84, 74)
-        Me.btnBorrar.TabIndex = 115
-        Me.btnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnBorrar.UseVisualStyleBackColor = False
         '
         'btnGuardar
         '
@@ -80,10 +58,10 @@ Partial Class stock
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(927, 396)
+        Me.btnGuardar.Location = New System.Drawing.Point(899, 401)
         Me.btnGuardar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(85, 78)
+        Me.btnGuardar.Size = New System.Drawing.Size(117, 114)
         Me.btnGuardar.TabIndex = 114
         Me.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnGuardar.UseVisualStyleBackColor = False
@@ -99,10 +77,10 @@ Partial Class stock
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnAgregar.Location = New System.Drawing.Point(831, 399)
+        Me.btnAgregar.Location = New System.Drawing.Point(768, 414)
         Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(83, 75)
+        Me.btnAgregar.Size = New System.Drawing.Size(104, 90)
         Me.btnAgregar.TabIndex = 113
         Me.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnAgregar.UseVisualStyleBackColor = False
@@ -116,34 +94,6 @@ Partial Class stock
         Me.lblCarrera.Size = New System.Drawing.Size(0, 17)
         Me.lblCarrera.TabIndex = 112
         '
-        'cbCategoria
-        '
-        Me.cbCategoria.FormattingEnabled = True
-        Me.cbCategoria.Location = New System.Drawing.Point(853, 104)
-        Me.cbCategoria.Margin = New System.Windows.Forms.Padding(4)
-        Me.cbCategoria.Name = "cbCategoria"
-        Me.cbCategoria.Size = New System.Drawing.Size(325, 24)
-        Me.cbCategoria.TabIndex = 111
-        '
-        'txtCantidad
-        '
-        Me.txtCantidad.Location = New System.Drawing.Point(853, 328)
-        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(325, 22)
-        Me.txtCantidad.TabIndex = 102
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(732, 328)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(99, 25)
-        Me.Label4.TabIndex = 101
-        Me.Label4.Text = "Cantidad"
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -154,31 +104,9 @@ Partial Class stock
         Me.Label3.Size = New System.Drawing.Size(0, 25)
         Me.Label3.TabIndex = 100
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(732, 176)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(98, 25)
-        Me.Label6.TabIndex = 98
-        Me.Label6.Text = "Producto"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(732, 106)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 25)
-        Me.Label2.TabIndex = 96
-        Me.Label2.Text = "Categoria"
-        '
         'ListViewProductos
         '
-        Me.ListViewProductos.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.id, Me.nombre, Me.a, Me.v, Me.c, Me.d, Me.z})
+        Me.ListViewProductos.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
         Me.ListViewProductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListViewProductos.Location = New System.Drawing.Point(16, 15)
         Me.ListViewProductos.Margin = New System.Windows.Forms.Padding(4)
@@ -187,24 +115,21 @@ Partial Class stock
         Me.ListViewProductos.TabIndex = 95
         Me.ListViewProductos.UseCompatibleStateImageBehavior = False
         '
-        'id
+        'ColumnHeader1
         '
-        Me.id.Text = "id"
-        Me.id.Width = 75
+        Me.ColumnHeader1.Text = "Categoria"
         '
-        'nombre
+        'ColumnHeader2
         '
-        Me.nombre.Text = "Producto"
-        Me.nombre.Width = 75
+        Me.ColumnHeader2.Text = "Producto"
         '
-        'a
+        'ColumnHeader3
         '
-        Me.a.Text = "Precio"
-        Me.a.Width = 75
+        Me.ColumnHeader3.Text = "Precio"
         '
-        'v
+        'ColumnHeader4
         '
-        Me.v.Text = "Cantidad"
+        Me.ColumnHeader4.Text = "Cantidad"
         '
         'Label1
         '
@@ -217,17 +142,6 @@ Partial Class stock
         Me.Label1.TabIndex = 94
         Me.Label1.Text = "Mantenimiento Cursada"
         '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(732, 245)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(73, 25)
-        Me.Label10.TabIndex = 116
-        Me.Label10.Text = "Precio"
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -238,75 +152,143 @@ Partial Class stock
         Me.Label5.Size = New System.Drawing.Size(0, 25)
         Me.Label5.TabIndex = 117
         '
-        'txtPrecio
+        'btnBorrar
         '
-        Me.txtPrecio.Location = New System.Drawing.Point(853, 247)
-        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(325, 22)
-        Me.txtPrecio.TabIndex = 118
-        '
-        'txtNombre
-        '
-        Me.txtNombre.Location = New System.Drawing.Point(853, 180)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(325, 22)
-        Me.txtNombre.TabIndex = 119
+        Me.btnBorrar.BackColor = System.Drawing.Color.Transparent
+        Me.btnBorrar.BackgroundImage = CType(resources.GetObject("btnBorrar.BackgroundImage"), System.Drawing.Image)
+        Me.btnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBorrar.FlatAppearance.BorderSize = 0
+        Me.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBorrar.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.btnBorrar.Location = New System.Drawing.Point(1024, 383)
+        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBorrar.Name = "btnBorrar"
+        Me.btnBorrar.Size = New System.Drawing.Size(171, 151)
+        Me.btnBorrar.TabIndex = 115
+        Me.btnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnBorrar.UseVisualStyleBackColor = False
         '
         'txtCodigo
         '
-        Me.txtCodigo.Location = New System.Drawing.Point(853, 50)
+        Me.txtCodigo.Location = New System.Drawing.Point(849, 46)
         Me.txtCodigo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCodigo.Name = "txtCodigo"
         Me.txtCodigo.Size = New System.Drawing.Size(325, 22)
-        Me.txtCodigo.TabIndex = 121
+        Me.txtCodigo.TabIndex = 131
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(732, 46)
+        Me.Label7.Location = New System.Drawing.Point(728, 42)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(81, 25)
-        Me.Label7.TabIndex = 120
+        Me.Label7.TabIndex = 130
         Me.Label7.Text = "Codigo"
         '
-        'c
+        'txtNombre
         '
-        Me.c.Text = "a"
+        Me.txtNombre.Location = New System.Drawing.Point(849, 176)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(325, 22)
+        Me.txtNombre.TabIndex = 129
         '
-        'd
+        'txtPrecio
         '
-        Me.d.Text = "as"
-        Me.d.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtPrecio.Location = New System.Drawing.Point(849, 243)
+        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPrecio.Name = "txtPrecio"
+        Me.txtPrecio.Size = New System.Drawing.Size(325, 22)
+        Me.txtPrecio.TabIndex = 128
         '
-        'z
+        'Label10
         '
-        Me.z.Text = "a"
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(728, 241)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(73, 25)
+        Me.Label10.TabIndex = 127
+        Me.Label10.Text = "Precio"
+        '
+        'cbCategoria
+        '
+        Me.cbCategoria.FormattingEnabled = True
+        Me.cbCategoria.Location = New System.Drawing.Point(849, 100)
+        Me.cbCategoria.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbCategoria.Name = "cbCategoria"
+        Me.cbCategoria.Size = New System.Drawing.Size(325, 24)
+        Me.cbCategoria.TabIndex = 126
+        '
+        'txtCantidad
+        '
+        Me.txtCantidad.Location = New System.Drawing.Point(849, 324)
+        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCantidad.Name = "txtCantidad"
+        Me.txtCantidad.Size = New System.Drawing.Size(325, 22)
+        Me.txtCantidad.TabIndex = 125
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(728, 324)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(99, 25)
+        Me.Label4.TabIndex = 124
+        Me.Label4.Text = "Cantidad"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(728, 172)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(98, 25)
+        Me.Label6.TabIndex = 123
+        Me.Label6.Text = "Producto"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(728, 102)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(106, 25)
+        Me.Label2.TabIndex = 122
+        Me.Label2.Text = "Categoria"
         '
         'stock
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(1196, 748)
         Me.Controls.Add(Me.txtCodigo)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.txtPrecio)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.btnBorrar)
-        Me.Controls.Add(Me.btnGuardar)
-        Me.Controls.Add(Me.btnAgregar)
-        Me.Controls.Add(Me.lblCarrera)
         Me.Controls.Add(Me.cbCategoria)
         Me.Controls.Add(Me.txtCantidad)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnGuardar)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.btnBorrar)
+        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.lblCarrera)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ListViewProductos)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(4)
@@ -316,30 +298,26 @@ Partial Class stock
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnBorrar As Button
     Friend WithEvents btnGuardar As Button
     Friend WithEvents btnAgregar As Button
     Friend WithEvents lblCarrera As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents ListViewProductos As ListView
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents btnBorrar As Button
+    Friend WithEvents txtCodigo As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents txtPrecio As TextBox
+    Friend WithEvents Label10 As Label
     Friend WithEvents cbCategoria As ComboBox
     Friend WithEvents txtCantidad As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ListViewProductos As ListView
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents id As ColumnHeader
-    Friend WithEvents nombre As ColumnHeader
-    Friend WithEvents a As ColumnHeader
-    Friend WithEvents v As ColumnHeader
-    Friend WithEvents txtPrecio As TextBox
-    Friend WithEvents txtNombre As TextBox
-    Friend WithEvents txtCodigo As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents c As ColumnHeader
-    Friend WithEvents d As ColumnHeader
-    Friend WithEvents z As ColumnHeader
 End Class

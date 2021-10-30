@@ -49,7 +49,7 @@ Partial Class Form1
         Me.Panel.Controls.Add(Me.LabelContraseña)
         Me.Panel.Controls.Add(Me.LabelUsuario)
         Me.Panel.Location = New System.Drawing.Point(625, 326)
-        Me.Panel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel.Name = "Panel"
         Me.Panel.Size = New System.Drawing.Size(524, 234)
         Me.Panel.TabIndex = 2
@@ -63,7 +63,7 @@ Partial Class Form1
         Me.btnAceptar.FlatAppearance.BorderSize = 0
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.Location = New System.Drawing.Point(411, 165)
-        Me.btnAceptar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAceptar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(79, 54)
         Me.btnAceptar.TabIndex = 3
@@ -75,7 +75,7 @@ Partial Class Form1
         Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(100, 74)
         Me.Panel2.TabIndex = 3
@@ -85,7 +85,7 @@ Partial Class Form1
         Me.Panel3.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(0, 17)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(524, 22)
         Me.Panel3.TabIndex = 4
@@ -107,19 +107,19 @@ Partial Class Form1
         '
         Me.TextBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.TextBox2.Location = New System.Drawing.Point(221, 114)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(267, 22)
-        Me.TextBox2.TabIndex = 3
+        Me.TextBox2.TabIndex = 2
         Me.TextBox2.UseSystemPasswordChar = True
         '
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(221, 66)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(267, 22)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBox1.TabIndex = 1
         '
         'LabelContraseña
         '
@@ -152,7 +152,7 @@ Partial Class Form1
         Me.PanelMains.BackColor = System.Drawing.Color.Orange
         Me.PanelMains.Controls.Add(Me.Panel)
         Me.PanelMains.Location = New System.Drawing.Point(0, -2)
-        Me.PanelMains.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelMains.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelMains.Name = "PanelMains"
         Me.PanelMains.Size = New System.Drawing.Size(2208, 894)
         Me.PanelMains.TabIndex = 3
@@ -164,7 +164,7 @@ Partial Class Form1
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.ClientSize = New System.Drawing.Size(1663, 847)
         Me.Controls.Add(Me.PanelMains)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.Panel.ResumeLayout(False)

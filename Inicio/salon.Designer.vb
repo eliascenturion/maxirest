@@ -24,9 +24,9 @@ Partial Class salon
     Private Sub InitializeComponent()
         Me.btnBarra = New System.Windows.Forms.Button()
         Me.btnMesa1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnMesa2 = New System.Windows.Forms.Button()
+        Me.btnMesa3 = New System.Windows.Forms.Button()
+        Me.btnMesa4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnBarra
@@ -52,41 +52,41 @@ Partial Class salon
         Me.btnMesa1.Text = "Mesa1"
         Me.btnMesa1.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnMesa2
         '
-        Me.Button3.BackColor = System.Drawing.Color.Orange
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Location = New System.Drawing.Point(243, 166)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(90, 78)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Mesa2"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnMesa2.BackColor = System.Drawing.Color.Orange
+        Me.btnMesa2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnMesa2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMesa2.Location = New System.Drawing.Point(243, 166)
+        Me.btnMesa2.Name = "btnMesa2"
+        Me.btnMesa2.Size = New System.Drawing.Size(90, 78)
+        Me.btnMesa2.TabIndex = 2
+        Me.btnMesa2.Text = "Mesa2"
+        Me.btnMesa2.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnMesa3
         '
-        Me.Button4.BackColor = System.Drawing.Color.Orange
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Location = New System.Drawing.Point(427, 166)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(90, 78)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Mesa3"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnMesa3.BackColor = System.Drawing.Color.Orange
+        Me.btnMesa3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnMesa3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMesa3.Location = New System.Drawing.Point(427, 166)
+        Me.btnMesa3.Name = "btnMesa3"
+        Me.btnMesa3.Size = New System.Drawing.Size(90, 78)
+        Me.btnMesa3.TabIndex = 3
+        Me.btnMesa3.Text = "Mesa3"
+        Me.btnMesa3.UseVisualStyleBackColor = False
         '
-        'Button5
+        'btnMesa4
         '
-        Me.Button5.BackColor = System.Drawing.Color.Orange
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.Location = New System.Drawing.Point(588, 166)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(90, 78)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Mesa4"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnMesa4.BackColor = System.Drawing.Color.Orange
+        Me.btnMesa4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnMesa4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMesa4.Location = New System.Drawing.Point(588, 166)
+        Me.btnMesa4.Name = "btnMesa4"
+        Me.btnMesa4.Size = New System.Drawing.Size(90, 78)
+        Me.btnMesa4.TabIndex = 4
+        Me.btnMesa4.Text = "Mesa4"
+        Me.btnMesa4.UseVisualStyleBackColor = False
         '
         'salon
         '
@@ -94,9 +94,9 @@ Partial Class salon
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SlateGray
         Me.ClientSize = New System.Drawing.Size(760, 524)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnMesa4)
+        Me.Controls.Add(Me.btnMesa3)
+        Me.Controls.Add(Me.btnMesa2)
         Me.Controls.Add(Me.btnMesa1)
         Me.Controls.Add(Me.btnBarra)
         Me.Name = "salon"
@@ -107,7 +107,7 @@ Partial Class salon
 
     Friend WithEvents btnBarra As Button
     Friend WithEvents btnMesa1 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnMesa2 As Button
+    Friend WithEvents btnMesa3 As Button
+    Friend WithEvents btnMesa4 As Button
 End Class
