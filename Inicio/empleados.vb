@@ -1,17 +1,10 @@
 ﻿Public Class empleados
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+        inicio.ShowDialog()
     End Sub
 
-    Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-
-    End Sub
-
-    Private Sub empleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+    Private Sub ListViewCursada_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListViewCursada.SelectedIndexChanged
 
     End Sub
 End Class

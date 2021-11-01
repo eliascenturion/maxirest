@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class inicio
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class inicio
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(inicio))
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -57,13 +57,13 @@ Partial Class inicio
         Me.btnCargos.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCargos.FlatAppearance.BorderSize = 0
         Me.btnCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCargos.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCargos.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCargos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnCargos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCargos.Location = New System.Drawing.Point(-50, 204)
+        Me.btnCargos.Location = New System.Drawing.Point(0, 211)
         Me.btnCargos.Name = "btnCargos"
-        Me.btnCargos.Size = New System.Drawing.Size(250, 68)
-        Me.btnCargos.TabIndex = 8
+        Me.btnCargos.Size = New System.Drawing.Size(200, 59)
+        Me.btnCargos.TabIndex = 10
         Me.btnCargos.Text = "Empleados"
         Me.btnCargos.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnCargos.UseVisualStyleBackColor = False
@@ -194,7 +194,6 @@ Partial Class inicio
 
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents btnCargos As Button
     Friend WithEvents btnStock As Button
     Friend WithEvents btnAbrirTurno As Button
     Friend WithEvents PanelMain As Panel
@@ -202,4 +201,5 @@ Partial Class inicio
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCancelar As Button
+    Friend WithEvents btnCargos As Button
 End Class

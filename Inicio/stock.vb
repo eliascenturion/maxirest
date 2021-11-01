@@ -89,4 +89,8 @@ Public Class stock
             Module1.conexion.Close()
         End Try
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+        inicio.ShowDialog()
+    End Sub
 End Class

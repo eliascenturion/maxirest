@@ -35,28 +35,18 @@ Partial Class pedido
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Calculadora = New System.Windows.Forms.Panel()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button18 = New System.Windows.Forms.Button()
         Me.Button19 = New System.Windows.Forms.Button()
         Me.Button20 = New System.Windows.Forms.Button()
         Me.Button21 = New System.Windows.Forms.Button()
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Menu = New System.Windows.Forms.PictureBox()
-        Me.Calculadora.SuspendLayout()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.ListViewMenu = New System.Windows.Forms.ListView()
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         CType(Me.Menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -179,169 +169,6 @@ Partial Class pedido
         Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft New Tai Lue", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(43, 11)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 26)
-        Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Cantidad"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(16, 31)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(144, 24)
-        Me.TextBox1.TabIndex = 11
-        '
-        'Calculadora
-        '
-        Me.Calculadora.BackColor = System.Drawing.Color.DarkGray
-        Me.Calculadora.Controls.Add(Me.Button17)
-        Me.Calculadora.Controls.Add(Me.Button16)
-        Me.Calculadora.Controls.Add(Me.Button15)
-        Me.Calculadora.Controls.Add(Me.Button14)
-        Me.Calculadora.Controls.Add(Me.Button13)
-        Me.Calculadora.Controls.Add(Me.Button12)
-        Me.Calculadora.Controls.Add(Me.Button11)
-        Me.Calculadora.Controls.Add(Me.Button10)
-        Me.Calculadora.Controls.Add(Me.Button9)
-        Me.Calculadora.Controls.Add(Me.Button8)
-        Me.Calculadora.Controls.Add(Me.Button7)
-        Me.Calculadora.Controls.Add(Me.Button6)
-        Me.Calculadora.Controls.Add(Me.TextBox1)
-        Me.Calculadora.Controls.Add(Me.Label2)
-        Me.Calculadora.Location = New System.Drawing.Point(272, 365)
-        Me.Calculadora.Name = "Calculadora"
-        Me.Calculadora.Size = New System.Drawing.Size(178, 254)
-        Me.Calculadora.TabIndex = 12
-        '
-        'Button17
-        '
-        Me.Button17.BackgroundImage = CType(resources.GetObject("Button17.BackgroundImage"), System.Drawing.Image)
-        Me.Button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button17.Location = New System.Drawing.Point(109, 183)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(51, 44)
-        Me.Button17.TabIndex = 23
-        Me.Button17.UseVisualStyleBackColor = True
-        '
-        'Button16
-        '
-        Me.Button16.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button16.Location = New System.Drawing.Point(63, 183)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(51, 44)
-        Me.Button16.TabIndex = 22
-        Me.Button16.Text = "0"
-        Me.Button16.UseVisualStyleBackColor = True
-        '
-        'Button15
-        '
-        Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.Location = New System.Drawing.Point(16, 183)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(51, 44)
-        Me.Button15.TabIndex = 21
-        Me.Button15.Text = "."
-        Me.Button15.UseVisualStyleBackColor = True
-        '
-        'Button14
-        '
-        Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.Location = New System.Drawing.Point(109, 144)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(51, 44)
-        Me.Button14.TabIndex = 20
-        Me.Button14.Text = "3"
-        Me.Button14.UseVisualStyleBackColor = True
-        '
-        'Button13
-        '
-        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(109, 102)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(51, 44)
-        Me.Button13.TabIndex = 19
-        Me.Button13.Text = "6"
-        Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(63, 144)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(51, 44)
-        Me.Button12.TabIndex = 18
-        Me.Button12.Text = "2"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(63, 102)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(51, 44)
-        Me.Button11.TabIndex = 17
-        Me.Button11.Text = "5"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(16, 144)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(51, 44)
-        Me.Button10.TabIndex = 16
-        Me.Button10.Text = "1"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(16, 102)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(51, 44)
-        Me.Button9.TabIndex = 15
-        Me.Button9.Text = "4"
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(109, 61)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(51, 44)
-        Me.Button8.TabIndex = 14
-        Me.Button8.Text = "9"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(63, 61)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(51, 44)
-        Me.Button7.TabIndex = 13
-        Me.Button7.Text = "8"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(16, 61)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(51, 44)
-        Me.Button6.TabIndex = 12
-        Me.Button6.Text = "7"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'Button18
         '
         Me.Button18.BackColor = System.Drawing.Color.Yellow
@@ -405,18 +232,59 @@ Partial Class pedido
         Me.Menu.TabIndex = 18
         Me.Menu.TabStop = False
         '
+        'btnAgregar
+        '
+        Me.btnAgregar.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnAgregar.BackgroundImage = CType(resources.GetObject("btnAgregar.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.Location = New System.Drawing.Point(156, 384)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(66, 64)
+        Me.btnAgregar.TabIndex = 19
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnAgregar.UseVisualStyleBackColor = False
+        '
+        'ListViewMenu
+        '
+        Me.ListViewMenu.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.ListViewMenu.Location = New System.Drawing.Point(457, 114)
+        Me.ListViewMenu.Name = "ListViewMenu"
+        Me.ListViewMenu.Size = New System.Drawing.Size(438, 334)
+        Me.ListViewMenu.TabIndex = 20
+        Me.ListViewMenu.UseCompatibleStateImageBehavior = False
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Cant."
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Detalle"
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "P.Unit"
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "Total"
+        '
         'pedido
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(904, 619)
+        Me.ClientSize = New System.Drawing.Size(904, 461)
+        Me.Controls.Add(Me.ListViewMenu)
+        Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.Button18)
         Me.Controls.Add(Me.Button19)
         Me.Controls.Add(Me.Button20)
         Me.Controls.Add(Me.Button21)
         Me.Controls.Add(Me.Button22)
-        Me.Controls.Add(Me.Calculadora)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -428,8 +296,6 @@ Partial Class pedido
         Me.Controls.Add(Me.Menu)
         Me.Name = "pedido"
         Me.Text = "pedido"
-        Me.Calculadora.ResumeLayout(False)
-        Me.Calculadora.PerformLayout()
         CType(Me.Menu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -448,25 +314,16 @@ Partial Class pedido
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Calculadora As Panel
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button17 As Button
-    Friend WithEvents Button16 As Button
-    Friend WithEvents Button15 As Button
-    Friend WithEvents Button14 As Button
-    Friend WithEvents Button13 As Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
     Friend WithEvents Button18 As Button
     Friend WithEvents Button19 As Button
     Friend WithEvents Button20 As Button
     Friend WithEvents Button21 As Button
     Friend WithEvents Button22 As Button
     Friend WithEvents Menu As PictureBox
+    Friend WithEvents btnAgregar As Button
+    Friend WithEvents ListViewMenu As ListView
+    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents ColumnHeader6 As ColumnHeader
+    Friend WithEvents ColumnHeader7 As ColumnHeader
+    Friend WithEvents ColumnHeader8 As ColumnHeader
 End Class

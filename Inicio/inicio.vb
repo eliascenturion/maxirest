@@ -31,4 +31,8 @@ Public Class inicio
     Private Sub btnStock_Click(sender As Object, e As EventArgs) Handles btnStock.Click
         AbrirFormulario(New stock)
     End Sub
+
+    Private Sub btnCargos_Click(sender As Object, e As EventArgs)
+        AbrirFormulario(New empleados)
+    End Sub
 End Class

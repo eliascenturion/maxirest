@@ -37,15 +37,16 @@ Partial Class empleados
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnInicio = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListViewCursada
         '
         Me.ListViewCursada.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader1})
         Me.ListViewCursada.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListViewCursada.Location = New System.Drawing.Point(12, 37)
+        Me.ListViewCursada.Location = New System.Drawing.Point(40, 45)
         Me.ListViewCursada.Name = "ListViewCursada"
-        Me.ListViewCursada.Size = New System.Drawing.Size(316, 330)
+        Me.ListViewCursada.Size = New System.Drawing.Size(369, 630)
         Me.ListViewCursada.TabIndex = 96
         Me.ListViewCursada.UseCompatibleStateImageBehavior = False
         '
@@ -65,7 +66,7 @@ Partial Class empleados
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(35, 17)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(110, 25)
         Me.Label1.TabIndex = 97
@@ -82,7 +83,7 @@ Partial Class empleados
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBorrar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnBorrar.Location = New System.Drawing.Point(277, 541)
+        Me.btnBorrar.Location = New System.Drawing.Point(708, 312)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(51, 53)
         Me.btnBorrar.TabIndex = 118
@@ -100,7 +101,7 @@ Partial Class empleados
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(142, 535)
+        Me.btnGuardar.Location = New System.Drawing.Point(573, 306)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(65, 69)
         Me.btnGuardar.TabIndex = 117
@@ -118,7 +119,7 @@ Partial Class empleados
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnAgregar.Location = New System.Drawing.Point(17, 541)
+        Me.btnAgregar.Location = New System.Drawing.Point(448, 312)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(53, 53)
         Me.btnAgregar.TabIndex = 116
@@ -127,7 +128,7 @@ Partial Class empleados
         '
         'txtCiclo
         '
-        Me.txtCiclo.Location = New System.Drawing.Point(90, 394)
+        Me.txtCiclo.Location = New System.Drawing.Point(521, 50)
         Me.txtCiclo.Name = "txtCiclo"
         Me.txtCiclo.Size = New System.Drawing.Size(238, 20)
         Me.txtCiclo.TabIndex = 123
@@ -136,7 +137,7 @@ Partial Class empleados
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(13, 494)
+        Me.Label6.Location = New System.Drawing.Point(444, 150)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(57, 20)
         Me.Label6.TabIndex = 121
@@ -145,7 +146,7 @@ Partial Class empleados
         'cbProducto
         '
         Me.cbProducto.FormattingEnabled = True
-        Me.cbProducto.Location = New System.Drawing.Point(90, 493)
+        Me.cbProducto.Location = New System.Drawing.Point(521, 149)
         Me.cbProducto.Name = "cbProducto"
         Me.cbProducto.Size = New System.Drawing.Size(238, 21)
         Me.cbProducto.TabIndex = 120
@@ -154,7 +155,7 @@ Partial Class empleados
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 394)
+        Me.Label2.Location = New System.Drawing.Point(444, 50)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 20)
         Me.Label2.TabIndex = 119
@@ -164,7 +165,7 @@ Partial Class empleados
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(13, 443)
+        Me.Label3.Location = New System.Drawing.Point(444, 99)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(40, 20)
         Me.Label3.TabIndex = 124
@@ -172,17 +173,36 @@ Partial Class empleados
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(90, 443)
+        Me.TextBox1.Location = New System.Drawing.Point(521, 99)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(238, 20)
         Me.TextBox1.TabIndex = 125
+        '
+        'btnInicio
+        '
+        Me.btnInicio.BackColor = System.Drawing.Color.Transparent
+        Me.btnInicio.BackgroundImage = CType(resources.GetObject("btnInicio.BackgroundImage"), System.Drawing.Image)
+        Me.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnInicio.FlatAppearance.BorderSize = 0
+        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.btnInicio.Location = New System.Drawing.Point(916, 12)
+        Me.btnInicio.Name = "btnInicio"
+        Me.btnInicio.Size = New System.Drawing.Size(152, 91)
+        Me.btnInicio.TabIndex = 133
+        Me.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnInicio.UseVisualStyleBackColor = False
         '
         'empleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(351, 608)
+        Me.ClientSize = New System.Drawing.Size(1370, 687)
+        Me.Controls.Add(Me.btnInicio)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtCiclo)
@@ -215,4 +235,5 @@ Partial Class empleados
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btnInicio As Button
 End Class
