@@ -18,8 +18,9 @@ Public Class stock
             MsgBox(ex.Message.ToString)
         End Try
     End Sub
+
     Private Sub cargarlistado()
-        ListViewProductos.Items.Clear()
+        ListView1.Items.Clear()
         Try
             Module1.conexion.Open()
             Dim cmdStock As New MySqlCommand()
@@ -30,13 +31,11 @@ Public Class stock
             readCursada = cmdStock.ExecuteReader
             Do While readCursada.Read()
                 Dim fila As ListViewItem
-                fila = ListViewProductos.Items.Add(readCursada("id_producto"))
-                fila.SubItems.Add(readCursada("nombre_producto"))
-                fila.SubItems.Add(readCursada("stock"))
-                fila.SubItems.Add(readCursada("precio"))
-                fila.SubItems.Add(readCursada("id_categoria_p"))
-                fila.SubItems.Add(readCursada("id_categoria"))
-                fila.SubItems.Add(readCursada("nombre_categoria"))
+                fila = ListView1.Items.Add(readCursada("id_producto"))
+                ListView1.Items.Add(readCursada("nombre_producto"))
+                ListView1.Items.Add(readCursada("stock"))
+                ListView1.Items.Add(readCursada("precio"))
+                ListView1.Items.Add(readCursada("id_categoria_p"))
             Loop
             readCursada.Close()
         Catch ex As Exception
@@ -68,7 +67,7 @@ Public Class stock
     Private Sub crud()
         Select Case accion
             Case "insert"
-                consulta = "INSERT INTO productos values (" + txtCodigo.Text + ",'" + txtNombre.Text + "'," + txtPrecio.Text + "," + txtCantidad.Text + "," + cbCategoria.SelectedValue.ToString + ")"
+                consulta = "INSERT INTO productos VALUES (" + txtCodigo.Text + ",'" + txtNombre.Text + "'," + txtPrecio.Text + "," + txtCantidad.Text + "," + cbCategoria.SelectedValue.ToString + ")"
                 limpiar()
                 cargarlistado()
                 MsgBox("Datos agregados")
@@ -89,8 +88,8 @@ Public Class stock
             Module1.conexion.Close()
         End Try
     End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
-        inicio.ShowDialog()
+        Me.Hide()
     End Sub
+
 End Class

@@ -93,7 +93,6 @@ C:\Users\user\Documents\maxirest\Inicio\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\user\Documents\maxirest\Inicio\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\user\Documents\maxirest\Inicio\bin\Debug\MySql.Data.xml
 C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.empleados.resources
-C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.Menu.resources
 C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.stock.resources
 C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\bin\Debug\Inicio.exe.config
 C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\obj\Debug\Inicio.exe

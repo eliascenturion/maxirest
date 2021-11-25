@@ -5,5 +5,4 @@ Module Module1
     Public accion As String 'Para determinar que tipo de consulta (insert, update, delete)'
     Public idUser As String
 
-
 End Module
