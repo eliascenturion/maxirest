@@ -73,11 +73,13 @@ Public Class empleados
                 cargarlistado()
                 MsgBox("Datos agregados")
             Case "update"
-                consulta = "UPDATE Set productos Set "
+                consulta = "UPDATE empleados SET nombre='" + txtNombre.Text + "', apellido='" + txtApellido.Text + "', dni=" + txtDni.Text + ", id_cargo=" + cbCargos.SelectedValue.ToString + " WHERE id=" + txtCodigo.Text
                 MsgBox("Datos modificados")
-                'Case "delete"
-                '    consulta = "delete from cursa where idmateria=" + cbMateria.SelectedValue.ToString + "And idalumno=" + cbAlumno.SelectedValue.ToString + " And ciclo=" + txtCiclo.Text + ""
-                '    MsgBox("Datos eliminados")
+                limpiar()
+                cargarlistado()
+            Case "delete"
+                consulta = "DELETE FROM empleados WHERE id=" + txtCodigo.Text
+                MsgBox("Datos eliminados")
         End Select
         Try
             Module1.conexion.Open()
@@ -96,7 +98,7 @@ Public Class empleados
             Dim cmdStock As New MySqlCommand()
             cmdStock.Connection = conexion
             cmdStock.CommandType = CommandType.Text
-            cmdStock.CommandText = "select * from empleados order by id"
+            cmdStock.CommandText = "SELECT E.*, C.nombre as nombre_cargo, C.id as id_cargo FROM empleados E INNER JOIN cargos C on E.id_cargo = C.id ORDER BY E.id;"
             Dim readEmpleados As MySqlDataReader
             readEmpleados = cmdStock.ExecuteReader
             Do While readEmpleados.Read()
@@ -104,8 +106,9 @@ Public Class empleados
                 fila = ListViewEmpleados.Items.Add(readEmpleados("id"))
                 fila.SubItems.Add(readEmpleados("nombre"))
                 fila.SubItems.Add(readEmpleados("apellido"))
-                fila.SubItems.Add(readEmpleados("id_cargo"))
+                fila.SubItems.Add(readEmpleados("nombre_cargo"))
                 fila.SubItems.Add(readEmpleados("dni"))
+                fila.SubItems.Add(readEmpleados("id_cargo"))
             Loop
             readEmpleados.Close()
         Catch ex As Exception
@@ -122,12 +125,15 @@ Public Class empleados
             Dim i As Integer
             For Each i In ListViewEmpleados.SelectedIndices
                 txtCodigo.Text = ListViewEmpleados.Items(i).SubItems(0).Text
-                txtDni.Text = ListViewEmpleados.Items(i).SubItems(3).Text
+                txtDni.Text = ListViewEmpleados.Items(i).SubItems(4).Text
                 txtNombre.Text = ListViewEmpleados.Items(i).SubItems(1).Text
                 txtApellido.Text = ListViewEmpleados.Items(i).SubItems(2).Text
+                cbCargos.Text = ListViewEmpleados.Items(i).SubItems(3).Text
+                Dim id_cargo = ListViewEmpleados.Items(i).SubItems(5).Text
                 accion = "update"
                 txtNombre.Focus()
             Next
+            btnGuardar.Enabled = True
         End If
     End Sub
 
@@ -155,6 +161,10 @@ Public Class empleados
 
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
         accion = "delete"
-        verificar()
+        crud()
+    End Sub
+
+    Private Sub ListViewEmpleados_Click(sender As Object, e As EventArgs) Handles ListViewEmpleados.Click
+        btnBorrar.Enabled = True
     End Sub
 End Class
