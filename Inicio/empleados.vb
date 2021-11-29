@@ -2,14 +2,35 @@
 
 Public Class empleados
     Public codCargo As Integer
+    Private Sub ConfigurarControles()
+        btnBorrar.Enabled = False
+        btnGuardar.Enabled = False
+        txtCodigo.Enabled = True
+        txtCodigo.Clear()
+        txtNombre.Clear()
+        txtApellido.Clear()
+        txtDni.Clear()
+        txtCodigo.Focus()
+        cargarlistado()
+    End Sub
     Private Sub empleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CargarCargo()
         cargarlistado()
+        ListViewEmpleados.View = View.Details
+        ListViewEmpleados.GridLines = True
+        ListViewEmpleados.HideSelection = False
+        ListViewEmpleados.FullRowSelect = True
+        ListViewEmpleados.MultiSelect = False
+        Me.BackColor = Color.FromArgb(228, 227, 228)
+        ConfigurarControles()
     End Sub
     Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
         inicio.ShowDialog()
     End Sub
-
+    Function convertir(ByVal texto As String) As String
+        Dim a As String = StrConv(texto, VbStrConv.ProperCase)
+        Return a
+    End Function
     Private Sub CargarCargo()
         Try
             Dim adaCargo As New MySqlDataAdapter("SELECT * FROM cargos", conexion)
@@ -39,6 +60,8 @@ Public Class empleados
     End Sub
     Private Sub limpiar()
         txtNombre.Text = ""
+        txtCodigo.Text = ""
+        txtApellido.Text = ""
         cbCargos.Text = ""
         txtDni.Text = ""
     End Sub
@@ -73,21 +96,23 @@ Public Class empleados
             Dim cmdStock As New MySqlCommand()
             cmdStock.Connection = conexion
             cmdStock.CommandType = CommandType.Text
-            cmdStock.CommandText = "Select E.id As codigo_usu, E.nombre As nombre_usu, E.dni, C.nombre As nombre_cargo, E.apellido, E.id As id_usu FROM empleados E INNER JOIN cargos C On C.id = E.id_cargo"
-            Dim readCursada As MySqlDataReader
-            readCursada = cmdStock.ExecuteReader
-            Do While readCursada.Read()
+            cmdStock.CommandText = "select * from empleados order by id"
+            Dim readEmpleados As MySqlDataReader
+            readEmpleados = cmdStock.ExecuteReader
+            Do While readEmpleados.Read()
                 Dim fila As ListViewItem
-                fila = ListViewEmpleados.Items.Add(readCursada("id_usu"))
-                ListViewEmpleados.Items.Add(readCursada("nombre_usu"))
-                ListViewEmpleados.Items.Add(readCursada("apellido"))
-                ListViewEmpleados.Items.Add(readCursada("nombre_cargo"))
-                ListViewEmpleados.Items.Add(readCursada("dni"))
+                fila = ListViewEmpleados.Items.Add(readEmpleados("id"))
+                fila.SubItems.Add(readEmpleados("nombre"))
+                fila.SubItems.Add(readEmpleados("apellido"))
+                fila.SubItems.Add(readEmpleados("id_cargo"))
+                fila.SubItems.Add(readEmpleados("dni"))
             Loop
-            readCursada.Close()
+            readEmpleados.Close()
         Catch ex As Exception
             MsgBox(ex.Message.ToString)
         Finally
+            conexion.Close()
+            conexion.Dispose()
             Module1.conexion.Close()
         End Try
     End Sub
@@ -106,4 +131,30 @@ Public Class empleados
         End If
     End Sub
 
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+        If txtCodigo.Text = "" Then
+            MsgBox("El codigo es obligatorio")
+            txtCodigo.Focus()
+        ElseIf txtNombre.Text = "" Then
+            MsgBox("El nombre es obligatorio")
+            txtNombre.Focus()
+        ElseIf txtApellido.Text = "" Then
+            MsgBox("El Apellido es obligatorio")
+            txtNombre.Focus()
+        ElseIf txtDni.Text = "" Then
+            MsgBox("El DNI es obligatorio")
+            txtNombre.Focus()
+        ElseIf cbCargos.Text = "" Then
+            MsgBox("El Cargo es obligatorio")
+            cbCargos.Focus()
+        Else
+            accion = "update"
+            verificar()
+        End If
+    End Sub
+
+    Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
+        accion = "delete"
+        verificar()
+    End Sub
 End Class
