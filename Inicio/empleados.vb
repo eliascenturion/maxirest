@@ -55,7 +55,6 @@ Public Class empleados
             txtNombre.Focus()
         Else
             crud()
-            'configurarControles()
         End If
     End Sub
     Private Sub limpiar()

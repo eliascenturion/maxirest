@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class stock
     Public codigoCategoria As Integer
+    Public codigo
     Private Sub ConfigurarControles()
         btnBorrar.Enabled = False
         btnGuardar.Enabled = False
@@ -42,7 +43,7 @@ Public Class stock
             Dim cmdStock As New MySqlCommand()
             cmdStock.Connection = conexion
             cmdStock.CommandType = CommandType.Text
-            cmdStock.CommandText = "select * from productos order by id"
+            cmdStock.CommandText = "SELECT P.*, C.nombre as categoria_nombre FROM productos P INNER JOIN categorias C ON c.id = P.id_categoria;"
             Dim readproductos As MySqlDataReader
             readproductos = cmdStock.ExecuteReader
             Do While readproductos.Read()
@@ -52,14 +53,13 @@ Public Class stock
                 fila.SubItems.Add(readproductos("precio"))
                 fila.SubItems.Add(readproductos("stock"))
                 fila.SubItems.Add(readproductos("id_categoria"))
+                fila.SubItems.Add(readproductos("categoria_nombre"))
             Loop
             readproductos.Close()
         Catch ex As Exception
             MsgBox(ex.Message.ToString)
         Finally
             conexion.Close()
-            conexion.Dispose()
-            Module1.conexion.Close()
         End Try
     End Sub
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
@@ -90,21 +90,27 @@ Public Class stock
                 cargarlistado()
                 MsgBox("Datos agregados")
             Case "update"
-                consulta = "UPDATE SET productos SET "
+                consulta = "UPDATE productos SET nombre='" + txtProducto.Text + "' , precio=" + txtPrecio.Text + " , stock=" + txtCantidad.Text + " WHERE id= " + txtCodigo.Text
+                limpiar()
+                cargarlistado()
                 MsgBox("Datos modificados")
-                'Case "delete"
-                '    consulta = "delete from cursa where idmateria=" + cbMateria.SelectedValue.ToString + "AND idalumno=" + cbAlumno.SelectedValue.ToString + " AND ciclo=" + txtCiclo.Text + ""
-                '    MsgBox("Datos eliminados")
+            Case "delete"
+                consulta = "DELETE FROM productos WHERE id=" + Label8.Text
+                limpiar()
+
+                MsgBox("Datos eliminados")
         End Select
         Try
             Module1.conexion.Open()
             Dim cmd As New MySqlCommand(consulta, conexion)
             cmd.ExecuteNonQuery()
+
         Catch ex As Exception
             MsgBox(ex.Message.ToString)
         Finally
             Module1.conexion.Close()
         End Try
+        cargarlistado()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
         Me.Hide()
@@ -113,23 +119,25 @@ Public Class stock
         Dim a As String = StrConv(texto, VbStrConv.ProperCase)
         Return a
     End Function
-    Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs)
+    Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
         If ListView1.Items.Count > 0 Then
             Dim i As Integer
             For Each i In ListView1.SelectedIndices
                 txtCodigo.Text = ListView1.Items(i).SubItems(0).Text
-                cbCategoria.Text = ListView1.Items(i).SubItems(4).Text
+                cbCategoria.Text = ListView1.Items(i).SubItems(5).Text
                 txtProducto.Text = ListView1.Items(i).SubItems(1).Text
                 txtPrecio.Text = ListView1.Items(i).SubItems(2).Text
-                txtCantidad.Text = ListView1.Items(i).SubItems(4).Text
+                txtCantidad.Text = ListView1.Items(i).SubItems(3).Text
                 accion = "update"
                 txtCodigo.Focus()
                 btnGuardar.Enabled = True
                 btnBorrar.Enabled = True
                 txtCodigo.Enabled = False
-                cbCategoria.Enabled = False
+                cbCategoria.Enabled = True
             Next
-            cargarCategorias()
+            'cargarCategorias()
+        Else
+            MsgBox("asdad")
         End If
     End Sub
 
@@ -153,5 +161,17 @@ Public Class stock
             accion = "update"
             verificar()
         End If
+    End Sub
+
+    Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
+        accion = "delete"
+        crud()
+    End Sub
+
+    Private Sub ListView1_Click(sender As Object, e As EventArgs) Handles ListView1.Click
+        For Each i In ListView1.SelectedIndices
+            Label8.Text = ListView1.Items(i).SubItems(0).Text
+        Next
+        btnBorrar.Enabled = True
     End Sub
 End Class
