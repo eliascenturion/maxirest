@@ -14,8 +14,6 @@ Public Class empleados
         cargarlistado()
     End Sub
     Private Sub empleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CargarCargo()
-        cargarlistado()
         ListViewEmpleados.View = View.Details
         ListViewEmpleados.GridLines = True
         ListViewEmpleados.HideSelection = False
@@ -23,8 +21,10 @@ Public Class empleados
         ListViewEmpleados.MultiSelect = False
         Me.BackColor = Color.FromArgb(228, 227, 228)
         ConfigurarControles()
+        CargarCargo()
+        cargarlistado()
     End Sub
-    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs)
         inicio.ShowDialog()
     End Sub
     Function convertir(ByVal texto As String) As String

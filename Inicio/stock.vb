@@ -112,7 +112,7 @@ Public Class stock
         End Try
         cargarlistado()
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Hide()
     End Sub
     Function convertir(ByVal texto As String) As String

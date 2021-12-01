@@ -40,7 +40,6 @@ Partial Class stock
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnInicio = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -62,10 +61,9 @@ Partial Class stock
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(905, 442)
-        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnGuardar.Location = New System.Drawing.Point(679, 359)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(117, 114)
+        Me.btnGuardar.Size = New System.Drawing.Size(88, 93)
         Me.btnGuardar.TabIndex = 114
         Me.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnGuardar.UseVisualStyleBackColor = False
@@ -81,10 +79,9 @@ Partial Class stock
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnAgregar.Location = New System.Drawing.Point(775, 454)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAgregar.Location = New System.Drawing.Point(581, 369)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(104, 90)
+        Me.btnAgregar.Size = New System.Drawing.Size(78, 73)
         Me.btnAgregar.TabIndex = 113
         Me.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnAgregar.UseVisualStyleBackColor = False
@@ -92,30 +89,27 @@ Partial Class stock
         'lblCarrera
         '
         Me.lblCarrera.AutoSize = True
-        Me.lblCarrera.Location = New System.Drawing.Point(179, 384)
-        Me.lblCarrera.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCarrera.Location = New System.Drawing.Point(134, 312)
         Me.lblCarrera.Name = "lblCarrera"
-        Me.lblCarrera.Size = New System.Drawing.Size(0, 17)
+        Me.lblCarrera.Size = New System.Drawing.Size(0, 13)
         Me.lblCarrera.TabIndex = 112
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(59, 491)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(44, 399)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(0, 25)
+        Me.Label3.Size = New System.Drawing.Size(0, 20)
         Me.Label3.TabIndex = 100
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(-84, -37)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(-63, -30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(241, 25)
+        Me.Label1.Size = New System.Drawing.Size(199, 20)
         Me.Label1.TabIndex = 94
         Me.Label1.Text = "Mantenimiento Cursada"
         '
@@ -123,10 +117,9 @@ Partial Class stock
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(628, 423)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(471, 344)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 25)
+        Me.Label5.Size = New System.Drawing.Size(0, 20)
         Me.Label5.TabIndex = 117
         '
         'btnBorrar
@@ -140,85 +133,76 @@ Partial Class stock
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBorrar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnBorrar.Location = New System.Drawing.Point(1031, 423)
-        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBorrar.Location = New System.Drawing.Point(773, 344)
         Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(171, 151)
+        Me.btnBorrar.Size = New System.Drawing.Size(128, 123)
         Me.btnBorrar.TabIndex = 115
         Me.btnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnBorrar.UseVisualStyleBackColor = False
         '
         'txtCodigo
         '
-        Me.txtCodigo.Location = New System.Drawing.Point(856, 86)
-        Me.txtCodigo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCodigo.Location = New System.Drawing.Point(642, 70)
         Me.txtCodigo.Name = "txtCodigo"
-        Me.txtCodigo.Size = New System.Drawing.Size(325, 22)
+        Me.txtCodigo.Size = New System.Drawing.Size(245, 20)
         Me.txtCodigo.TabIndex = 131
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(735, 82)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(551, 67)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(81, 25)
+        Me.Label7.Size = New System.Drawing.Size(65, 20)
         Me.Label7.TabIndex = 130
         Me.Label7.Text = "Codigo"
         '
         'txtProducto
         '
-        Me.txtProducto.Location = New System.Drawing.Point(856, 217)
-        Me.txtProducto.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtProducto.Location = New System.Drawing.Point(642, 176)
         Me.txtProducto.Name = "txtProducto"
-        Me.txtProducto.Size = New System.Drawing.Size(325, 22)
+        Me.txtProducto.Size = New System.Drawing.Size(245, 20)
         Me.txtProducto.TabIndex = 129
         '
         'txtPrecio
         '
-        Me.txtPrecio.Location = New System.Drawing.Point(856, 283)
-        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPrecio.Location = New System.Drawing.Point(642, 230)
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(325, 22)
+        Me.txtPrecio.Size = New System.Drawing.Size(245, 20)
         Me.txtPrecio.TabIndex = 128
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(735, 282)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(551, 229)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(73, 25)
+        Me.Label10.Size = New System.Drawing.Size(59, 20)
         Me.Label10.TabIndex = 127
         Me.Label10.Text = "Precio"
         '
         'cbCategoria
         '
         Me.cbCategoria.FormattingEnabled = True
-        Me.cbCategoria.Location = New System.Drawing.Point(856, 140)
-        Me.cbCategoria.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbCategoria.Location = New System.Drawing.Point(642, 114)
         Me.cbCategoria.Name = "cbCategoria"
-        Me.cbCategoria.Size = New System.Drawing.Size(325, 24)
+        Me.cbCategoria.Size = New System.Drawing.Size(245, 21)
         Me.cbCategoria.TabIndex = 126
         '
         'txtCantidad
         '
-        Me.txtCantidad.Location = New System.Drawing.Point(856, 364)
-        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCantidad.Location = New System.Drawing.Point(642, 296)
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(325, 22)
+        Me.txtCantidad.Size = New System.Drawing.Size(245, 20)
         Me.txtCantidad.TabIndex = 125
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(735, 364)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(551, 296)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(99, 25)
+        Me.Label4.Size = New System.Drawing.Size(81, 20)
         Me.Label4.TabIndex = 124
         Me.Label4.Text = "Cantidad"
         '
@@ -226,10 +210,9 @@ Partial Class stock
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(735, 213)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(551, 173)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(98, 25)
+        Me.Label6.Size = New System.Drawing.Size(81, 20)
         Me.Label6.TabIndex = 123
         Me.Label6.Text = "Producto"
         '
@@ -237,39 +220,18 @@ Partial Class stock
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(735, 143)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(551, 116)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 25)
+        Me.Label2.Size = New System.Drawing.Size(87, 20)
         Me.Label2.TabIndex = 122
         Me.Label2.Text = "Categoria"
-        '
-        'btnInicio
-        '
-        Me.btnInicio.BackColor = System.Drawing.Color.Transparent
-        Me.btnInicio.BackgroundImage = CType(resources.GetObject("btnInicio.BackgroundImage"), System.Drawing.Image)
-        Me.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnInicio.FlatAppearance.BorderSize = 0
-        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnInicio.Location = New System.Drawing.Point(1071, -11)
-        Me.btnInicio.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnInicio.Name = "btnInicio"
-        Me.btnInicio.Size = New System.Drawing.Size(149, 79)
-        Me.btnInicio.TabIndex = 132
-        Me.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnInicio.UseVisualStyleBackColor = False
         '
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
-        Me.ListView1.Location = New System.Drawing.Point(36, 58)
-        Me.ListView1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ListView1.Location = New System.Drawing.Point(27, 47)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(611, 440)
+        Me.ListView1.Size = New System.Drawing.Size(459, 358)
         Me.ListView1.TabIndex = 1
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
@@ -306,21 +268,21 @@ Partial Class stock
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(504, 610)
+        Me.Label8.Location = New System.Drawing.Point(378, 496)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(0, 17)
+        Me.Label8.Size = New System.Drawing.Size(0, 13)
         Me.Label8.TabIndex = 133
         Me.Label8.Visible = False
         '
         'stock
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(1196, 748)
+        Me.ClientSize = New System.Drawing.Size(897, 608)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ListView1)
-        Me.Controls.Add(Me.btnInicio)
         Me.Controls.Add(Me.txtCodigo)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtProducto)
@@ -338,7 +300,6 @@ Partial Class stock
         Me.Controls.Add(Me.lblCarrera)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "stock"
         Me.Text = "stock"
         Me.ResumeLayout(False)
@@ -362,7 +323,6 @@ Partial Class stock
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents btnInicio As Button
     Friend WithEvents ListView1 As ListView
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents ColumnHeader2 As ColumnHeader

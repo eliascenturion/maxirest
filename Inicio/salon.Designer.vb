@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class salon
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,12 @@ Partial Class salon
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(salon))
         Me.btnBarra = New System.Windows.Forms.Button()
         Me.btnMesa1 = New System.Windows.Forms.Button()
         Me.btnMesa2 = New System.Windows.Forms.Button()
         Me.btnMesa3 = New System.Windows.Forms.Button()
-        Me.btnMesa4 = New System.Windows.Forms.Button()
-        Me.btnInicio = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnBarra
@@ -78,44 +75,12 @@ Partial Class salon
         Me.btnMesa3.Text = "Mesa3"
         Me.btnMesa3.UseVisualStyleBackColor = False
         '
-        'btnMesa4
-        '
-        Me.btnMesa4.BackColor = System.Drawing.Color.Orange
-        Me.btnMesa4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnMesa4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMesa4.Location = New System.Drawing.Point(588, 166)
-        Me.btnMesa4.Name = "btnMesa4"
-        Me.btnMesa4.Size = New System.Drawing.Size(90, 78)
-        Me.btnMesa4.TabIndex = 4
-        Me.btnMesa4.Text = "Mesa4"
-        Me.btnMesa4.UseVisualStyleBackColor = False
-        '
-        'btnInicio
-        '
-        Me.btnInicio.BackColor = System.Drawing.Color.Transparent
-        Me.btnInicio.BackgroundImage = CType(resources.GetObject("btnInicio.BackgroundImage"), System.Drawing.Image)
-        Me.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnInicio.FlatAppearance.BorderSize = 0
-        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnInicio.Location = New System.Drawing.Point(654, -4)
-        Me.btnInicio.Name = "btnInicio"
-        Me.btnInicio.Size = New System.Drawing.Size(112, 64)
-        Me.btnInicio.TabIndex = 133
-        Me.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnInicio.UseVisualStyleBackColor = False
-        '
         'salon
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SlateGray
         Me.ClientSize = New System.Drawing.Size(760, 524)
-        Me.Controls.Add(Me.btnInicio)
-        Me.Controls.Add(Me.btnMesa4)
         Me.Controls.Add(Me.btnMesa3)
         Me.Controls.Add(Me.btnMesa2)
         Me.Controls.Add(Me.btnMesa1)
@@ -130,6 +95,4 @@ Partial Class salon
     Friend WithEvents btnMesa1 As Button
     Friend WithEvents btnMesa2 As Button
     Friend WithEvents btnMesa3 As Button
-    Friend WithEvents btnMesa4 As Button
-    Friend WithEvents btnInicio As Button
 End Class
