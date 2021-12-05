@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class pedido
+Public Class pedido2
     Public NombreEmpleado As Integer
     Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
         Dim sql = "SELECT P.* FROM productos P INNER JOIN categorias C on P.id_categoria=C.id WHERE C.id = 1; "
@@ -209,6 +209,7 @@ Public Class pedido
         Dim sql = "SELECT P.* FROM productos P INNER JOIN categorias C on P.id_categoria=C.id WHERE C.id = 5; "
         cargarlistado(sql)
     End Sub
+
     Private Sub CbNomEpleado_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles CbNomEpleado.SelectionChangeCommitted
         CbNomEpleado.Enabled = False
     End Sub

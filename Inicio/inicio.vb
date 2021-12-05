@@ -26,4 +26,8 @@ Public Class inicio
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         AbrirFormulario(New salon)
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        AbrirFormulario(New factura)
+    End Sub
 End Class

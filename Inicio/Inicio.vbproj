@@ -79,6 +79,12 @@
     <Compile Include="empleados.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="factura.Designer.vb">
+      <DependentUpon>factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,24 @@
     <Compile Include="pedido.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="pedido2.Designer.vb">
+      <DependentUpon>pedido2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pedido2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pedido3.Designer.vb">
+      <DependentUpon>pedido3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pedido3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pedido4.Designer.vb">
+      <DependentUpon>pedido4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pedido4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="salon.Designer.vb">
       <DependentUpon>salon.vb</DependentUpon>
     </Compile>
@@ -131,6 +155,9 @@
     <EmbeddedResource Include="empleados.resx">
       <DependentUpon>empleados.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="factura.resx">
+      <DependentUpon>factura.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +172,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pedido.resx">
       <DependentUpon>pedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pedido2.resx">
+      <DependentUpon>pedido2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pedido3.resx">
+      <DependentUpon>pedido3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pedido4.resx">
+      <DependentUpon>pedido4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="salon.resx">
       <DependentUpon>salon.vb</DependentUpon>

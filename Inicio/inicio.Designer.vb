@@ -24,17 +24,19 @@ Partial Class inicio
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(inicio))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PanelMain = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnCargos = New System.Windows.Forms.Button()
         Me.btnStock = New System.Windows.Forms.Button()
+        Me.PanelMain = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkOrange
+        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.btnCargos)
         Me.Panel1.Controls.Add(Me.btnStock)
@@ -43,15 +45,6 @@ Partial Class inicio
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(265, 981)
         Me.Panel1.TabIndex = 5
-        '
-        'PanelMain
-        '
-        Me.PanelMain.BackColor = System.Drawing.Color.SlateGray
-        Me.PanelMain.Location = New System.Drawing.Point(264, 0)
-        Me.PanelMain.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelMain.Name = "PanelMain"
-        Me.PanelMain.Size = New System.Drawing.Size(2208, 894)
-        Me.PanelMain.TabIndex = 6
         '
         'Button1
         '
@@ -113,6 +106,15 @@ Partial Class inicio
         Me.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnStock.UseVisualStyleBackColor = False
         '
+        'PanelMain
+        '
+        Me.PanelMain.BackColor = System.Drawing.Color.SlateGray
+        Me.PanelMain.Location = New System.Drawing.Point(264, 0)
+        Me.PanelMain.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelMain.Name = "PanelMain"
+        Me.PanelMain.Size = New System.Drawing.Size(2208, 894)
+        Me.PanelMain.TabIndex = 6
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ControlDark
@@ -123,6 +125,26 @@ Partial Class inicio
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(89, 74)
         Me.Panel2.TabIndex = 4
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Gold
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(0, 359)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(267, 73)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "Facturas"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'inicio
         '
@@ -147,4 +169,5 @@ Partial Class inicio
     Friend WithEvents PanelMain As Panel
     Friend WithEvents btnCargos As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

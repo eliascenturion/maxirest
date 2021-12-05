@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class pedido
+Public Class pedido4
     Public NombreEmpleado As Integer
     Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
         Dim sql = "SELECT P.* FROM productos P INNER JOIN categorias C on P.id_categoria=C.id WHERE C.id = 1; "

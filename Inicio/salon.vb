@@ -4,10 +4,14 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnMesa1.Click
-        pedido.ShowDialog()
+        pedido2.ShowDialog()
     End Sub
 
-    Private Sub salon_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub btnMesa2_Click(sender As Object, e As EventArgs) Handles btnMesa2.Click
+        pedido3.ShowDialog()
+    End Sub
 
+    Private Sub btnMesa3_Click(sender As Object, e As EventArgs) Handles btnMesa3.Click
+        pedido4.ShowDialog()
     End Sub
 End Class

@@ -120,3 +120,7 @@ C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\obj\Debug\Inicio.pedido.re
 C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\obj\Debug\Inicio.salon.resources
 C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\obj\Debug\Inicio.stock.resources
 C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\obj\Debug\Inicio.vbproj.GenerateResource.Cache
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.factura.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.pedido2.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.pedido3.resources
+C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.pedido4.resources
