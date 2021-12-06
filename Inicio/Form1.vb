@@ -39,7 +39,16 @@ Public Class Form1
 
     End Sub
 
-    Private Sub PanelMain_Paint(sender As Object, e As PaintEventArgs) Handles PanelMains.Paint
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        Dim i As Integer
 
+        i = MsgBox("¿Esta seguro de querer cerrar?", MsgBoxStyle.YesNo)
+
+        If i = vbYes Then
+
+            Me.Close()
+
+
+        End If
     End Sub
 End Class

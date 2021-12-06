@@ -124,3 +124,7 @@ C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.factura.resources
 C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.pedido2.resources
 C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.pedido3.resources
 C:\Users\user\Desktop\maxirest\Inicio\obj\Debug\Inicio.pedido4.resources
+C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\obj\Debug\Inicio.factura.resources
+C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\obj\Debug\Inicio.pedido2.resources
+C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\obj\Debug\Inicio.pedido3.resources
+C:\Users\PC\Documents\FinalPracticaprofesional\Inicio\obj\Debug\Inicio.pedido4.resources

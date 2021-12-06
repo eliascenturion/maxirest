@@ -50,7 +50,7 @@ Partial Class empleados
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(35, 17)
+        Me.Label1.Location = New System.Drawing.Point(94, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(110, 25)
         Me.Label1.TabIndex = 97
@@ -67,7 +67,7 @@ Partial Class empleados
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBorrar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnBorrar.Location = New System.Drawing.Point(708, 312)
+        Me.btnBorrar.Location = New System.Drawing.Point(768, 316)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(51, 53)
         Me.btnBorrar.TabIndex = 118
@@ -85,7 +85,7 @@ Partial Class empleados
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(573, 306)
+        Me.btnGuardar.Location = New System.Drawing.Point(633, 310)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(65, 69)
         Me.btnGuardar.TabIndex = 117
@@ -103,7 +103,7 @@ Partial Class empleados
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnAgregar.Location = New System.Drawing.Point(448, 312)
+        Me.btnAgregar.Location = New System.Drawing.Point(508, 316)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(53, 53)
         Me.btnAgregar.TabIndex = 116
@@ -112,7 +112,7 @@ Partial Class empleados
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(521, 91)
+        Me.txtNombre.Location = New System.Drawing.Point(581, 95)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(238, 20)
         Me.txtNombre.TabIndex = 123
@@ -121,7 +121,7 @@ Partial Class empleados
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(444, 223)
+        Me.Label6.Location = New System.Drawing.Point(504, 227)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(57, 20)
         Me.Label6.TabIndex = 121
@@ -130,7 +130,7 @@ Partial Class empleados
         'cbCargos
         '
         Me.cbCargos.FormattingEnabled = True
-        Me.cbCargos.Location = New System.Drawing.Point(521, 222)
+        Me.cbCargos.Location = New System.Drawing.Point(581, 226)
         Me.cbCargos.Name = "cbCargos"
         Me.cbCargos.Size = New System.Drawing.Size(238, 21)
         Me.cbCargos.TabIndex = 120
@@ -139,7 +139,7 @@ Partial Class empleados
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(444, 91)
+        Me.Label2.Location = New System.Drawing.Point(504, 95)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 20)
         Me.Label2.TabIndex = 119
@@ -149,7 +149,7 @@ Partial Class empleados
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(444, 172)
+        Me.Label3.Location = New System.Drawing.Point(504, 176)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(40, 20)
         Me.Label3.TabIndex = 124
@@ -157,7 +157,7 @@ Partial Class empleados
         '
         'txtDni
         '
-        Me.txtDni.Location = New System.Drawing.Point(521, 172)
+        Me.txtDni.Location = New System.Drawing.Point(581, 176)
         Me.txtDni.Name = "txtDni"
         Me.txtDni.Size = New System.Drawing.Size(238, 20)
         Me.txtDni.TabIndex = 125
@@ -165,8 +165,8 @@ Partial Class empleados
         'ListViewEmpleados
         '
         Me.ListViewEmpleados.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
-        Me.ListViewEmpleados.Location = New System.Drawing.Point(39, 43)
-        Me.ListViewEmpleados.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ListViewEmpleados.Location = New System.Drawing.Point(99, 47)
+        Me.ListViewEmpleados.Margin = New System.Windows.Forms.Padding(2)
         Me.ListViewEmpleados.Name = "ListViewEmpleados"
         Me.ListViewEmpleados.Size = New System.Drawing.Size(386, 463)
         Me.ListViewEmpleados.TabIndex = 134
@@ -200,7 +200,7 @@ Partial Class empleados
         '
         'txtCodigo
         '
-        Me.txtCodigo.Location = New System.Drawing.Point(521, 46)
+        Me.txtCodigo.Location = New System.Drawing.Point(581, 50)
         Me.txtCodigo.Name = "txtCodigo"
         Me.txtCodigo.Size = New System.Drawing.Size(238, 20)
         Me.txtCodigo.TabIndex = 136
@@ -209,7 +209,7 @@ Partial Class empleados
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(444, 46)
+        Me.Label4.Location = New System.Drawing.Point(504, 50)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(65, 20)
         Me.Label4.TabIndex = 135
@@ -217,7 +217,7 @@ Partial Class empleados
         '
         'txtApellido
         '
-        Me.txtApellido.Location = New System.Drawing.Point(521, 132)
+        Me.txtApellido.Location = New System.Drawing.Point(581, 136)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(238, 20)
         Me.txtApellido.TabIndex = 138
@@ -226,7 +226,7 @@ Partial Class empleados
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(444, 132)
+        Me.Label5.Location = New System.Drawing.Point(504, 136)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(73, 20)
         Me.Label5.TabIndex = 137

@@ -30,4 +30,18 @@ Public Class inicio
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         AbrirFormulario(New factura)
     End Sub
+
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        Dim i As Integer
+
+        i = MsgBox("¿Esta seguro de querer cerrar el programa?", MsgBoxStyle.YesNo)
+
+        If i = vbYes Then
+
+            Me.Close()
+            Form1.Close()
+
+        End If
+    End Sub
+
 End Class

@@ -32,10 +32,9 @@ Partial Class salon
         '
         Me.btnBarra.BackColor = System.Drawing.Color.Orange
         Me.btnBarra.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnBarra.Location = New System.Drawing.Point(276, 46)
-        Me.btnBarra.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBarra.Location = New System.Drawing.Point(179, 34)
         Me.btnBarra.Name = "btnBarra"
-        Me.btnBarra.Size = New System.Drawing.Size(427, 54)
+        Me.btnBarra.Size = New System.Drawing.Size(412, 80)
         Me.btnBarra.TabIndex = 0
         Me.btnBarra.Text = "Barra"
         Me.btnBarra.UseVisualStyleBackColor = False
@@ -45,10 +44,9 @@ Partial Class salon
         Me.btnMesa1.BackColor = System.Drawing.Color.Orange
         Me.btnMesa1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnMesa1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMesa1.Location = New System.Drawing.Point(57, 204)
-        Me.btnMesa1.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMesa1.Location = New System.Drawing.Point(43, 166)
         Me.btnMesa1.Name = "btnMesa1"
-        Me.btnMesa1.Size = New System.Drawing.Size(120, 96)
+        Me.btnMesa1.Size = New System.Drawing.Size(111, 97)
         Me.btnMesa1.TabIndex = 1
         Me.btnMesa1.Text = "Mesa1"
         Me.btnMesa1.UseVisualStyleBackColor = False
@@ -58,10 +56,9 @@ Partial Class salon
         Me.btnMesa2.BackColor = System.Drawing.Color.Orange
         Me.btnMesa2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnMesa2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMesa2.Location = New System.Drawing.Point(324, 204)
-        Me.btnMesa2.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMesa2.Location = New System.Drawing.Point(338, 166)
         Me.btnMesa2.Name = "btnMesa2"
-        Me.btnMesa2.Size = New System.Drawing.Size(120, 96)
+        Me.btnMesa2.Size = New System.Drawing.Size(114, 97)
         Me.btnMesa2.TabIndex = 2
         Me.btnMesa2.Text = "Mesa2"
         Me.btnMesa2.UseVisualStyleBackColor = False
@@ -71,25 +68,23 @@ Partial Class salon
         Me.btnMesa3.BackColor = System.Drawing.Color.Orange
         Me.btnMesa3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnMesa3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMesa3.Location = New System.Drawing.Point(569, 204)
-        Me.btnMesa3.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMesa3.Location = New System.Drawing.Point(618, 166)
         Me.btnMesa3.Name = "btnMesa3"
-        Me.btnMesa3.Size = New System.Drawing.Size(120, 96)
+        Me.btnMesa3.Size = New System.Drawing.Size(107, 97)
         Me.btnMesa3.TabIndex = 3
         Me.btnMesa3.Text = "Mesa3"
         Me.btnMesa3.UseVisualStyleBackColor = False
         '
         'salon
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SlateGray
-        Me.ClientSize = New System.Drawing.Size(1013, 645)
+        Me.ClientSize = New System.Drawing.Size(760, 524)
         Me.Controls.Add(Me.btnMesa3)
         Me.Controls.Add(Me.btnMesa2)
         Me.Controls.Add(Me.btnMesa1)
         Me.Controls.Add(Me.btnBarra)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "salon"
         Me.Text = "salon"
         Me.ResumeLayout(False)
