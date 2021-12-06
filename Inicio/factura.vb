@@ -99,7 +99,6 @@ Public Class factura
     Private Sub cbMesas_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cbMesas.SelectionChangeCommitted
         Label4.Text = 0
         Dim idMesas = cbMesas.SelectedItem.ToString
-        MsgBox(cbMesas.SelectedItem.ToString)
         Dim filtro = cbFiltro.SelectedText.ToString
         Dim idEmpleado As Integer = 0
         If cbMesas.SelectedIndex > -1 Then
@@ -110,6 +109,21 @@ Public Class factura
     
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim mensaje As String
+        mensaje = MsgBox("¿Desea imprimir la factura?", MsgBoxStyle.YesNo)
+        If mensaje = vbYes Then
+            MsgBox("Factura impresa")
+            limpiar()
+            ListViewFacturas.Clear()
+        End If
+    End Sub
+    Private Sub limpiar()
+        cbEmpleado.Text = ""
+        cbMesas.Text = ""
+        cbFiltro.Text = ""
+    End Sub
+
+    Private Sub cbFiltro_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cbFiltro.SelectionChangeCommitted
         If cbFiltro.SelectedIndex > -1 Then
             If cbEmpleado.SelectedIndex > -1 Then
                 If cbMesas.SelectedIndex > -1 Then
@@ -117,16 +131,6 @@ Public Class factura
                     Dim idEmpleado = cbEmpleado.SelectedValue.ToString
                     Dim filtro = cbFiltro.SelectedItem.ToString
                     cargarlistado(idEmpleado, idMesas, filtro, 1)
-
-                    Dim mensaje As Integer
-
-                    mensaje = MsgBox("¿Desea imprimir la factura?", MsgBoxStyle.YesNo)
-
-                    If mensaje = vbYes Then
-                        MsgBox("Factura impresa")
-                        limpiar()
-                        ListViewFacturas.Clear()
-                    End If
                 Else
                     MsgBox("Seleccione una mesa")
                 End If
@@ -134,10 +138,5 @@ Public Class factura
                 MsgBox("Seleccione un empleado")
             End If
         End If
-    End Sub
-    Private Sub limpiar()
-        cbEmpleado.Text = ""
-        cbMesas.Text = ""
-        cbFiltro.Text = ""
     End Sub
 End Class
