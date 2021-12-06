@@ -45,7 +45,7 @@ Public Class empleados
         End Try
     End Sub
 
-    Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
+    Private Sub btnAgregar_Click(sender As Object, e As EventArgs)
         accion = "insert"
         verificar()
     End Sub
@@ -136,7 +136,7 @@ Public Class empleados
         End If
     End Sub
 
-    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs)
         If txtCodigo.Text = "" Then
             MsgBox("El codigo es obligatorio")
             txtCodigo.Focus()
@@ -158,12 +158,29 @@ Public Class empleados
         End If
     End Sub
 
-    Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
+    Private Sub btnBorrar_Click(sender As Object, e As EventArgs)
         accion = "delete"
         crud()
     End Sub
 
     Private Sub ListViewEmpleados_Click(sender As Object, e As EventArgs) Handles ListViewEmpleados.Click
         btnBorrar.Enabled = True
+    End Sub
+
+    Private Sub txtCodigo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCodigo.KeyPress
+        SoloNumeros(e)
+    End Sub
+
+    Private Sub txtNombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNombre.KeyPress
+        SoloLetras(e)
+    End Sub
+
+
+    Private Sub txtApellido_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtApellido.KeyPress
+        SoloLetras(e)
+    End Sub
+
+    Private Sub txtDni_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDni.KeyPress
+        SoloNumeros(e)
     End Sub
 End Class

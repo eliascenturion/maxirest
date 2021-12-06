@@ -174,4 +174,21 @@ Public Class stock
         Next
         btnBorrar.Enabled = True
     End Sub
+
+    Private Sub txtCodigo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCodigo.KeyPress
+        SoloNumeros(e)
+    End Sub
+
+    Private Sub txtProducto_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtProducto.KeyPress
+        SoloLetras(e)
+    End Sub
+
+    Private Sub txtPrecio_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPrecio.KeyPress
+        SoloNumeros(e)
+    End Sub
+    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
+        SoloNumeros(e)
+    End Sub
+
+
 End Class

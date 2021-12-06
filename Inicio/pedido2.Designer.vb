@@ -48,9 +48,10 @@ Partial Class pedido2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 486)
+        Me.Button1.Location = New System.Drawing.Point(10, 395)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(184, 78)
+        Me.Button1.Size = New System.Drawing.Size(138, 63)
         Me.Button1.TabIndex = 38
         Me.Button1.Text = "Cerrar pedido"
         Me.Button1.UseVisualStyleBackColor = True
@@ -58,10 +59,9 @@ Partial Class pedido2
         'CbNomEpleado
         '
         Me.CbNomEpleado.FormattingEnabled = True
-        Me.CbNomEpleado.Location = New System.Drawing.Point(436, 452)
-        Me.CbNomEpleado.Margin = New System.Windows.Forms.Padding(4)
+        Me.CbNomEpleado.Location = New System.Drawing.Point(327, 367)
         Me.CbNomEpleado.Name = "CbNomEpleado"
-        Me.CbNomEpleado.Size = New System.Drawing.Size(160, 24)
+        Me.CbNomEpleado.Size = New System.Drawing.Size(121, 21)
         Me.CbNomEpleado.TabIndex = 36
         '
         'ColumnHeader6
@@ -82,10 +82,9 @@ Partial Class pedido2
         '
         Me.txtNombreEmpleado.AutoSize = True
         Me.txtNombreEmpleado.Font = New System.Drawing.Font("Microsoft New Tai Lue", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombreEmpleado.Location = New System.Drawing.Point(316, 452)
-        Me.txtNombreEmpleado.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.txtNombreEmpleado.Location = New System.Drawing.Point(237, 367)
         Me.txtNombreEmpleado.Name = "txtNombreEmpleado"
-        Me.txtNombreEmpleado.Size = New System.Drawing.Size(110, 29)
+        Me.txtNombreEmpleado.Size = New System.Drawing.Size(90, 24)
         Me.txtNombreEmpleado.TabIndex = 37
         Me.txtNombreEmpleado.Text = "Empleado"
         '
@@ -93,10 +92,9 @@ Partial Class pedido2
         '
         Me.ListViewMenu.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader7, Me.ColumnHeader5, Me.ColumnHeader6})
         Me.ListViewMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListViewMenu.Location = New System.Drawing.Point(606, 125)
-        Me.ListViewMenu.Margin = New System.Windows.Forms.Padding(4)
+        Me.ListViewMenu.Location = New System.Drawing.Point(454, 102)
         Me.ListViewMenu.Name = "ListViewMenu"
-        Me.ListViewMenu.Size = New System.Drawing.Size(544, 440)
+        Me.ListViewMenu.Size = New System.Drawing.Size(409, 358)
         Me.ListViewMenu.TabIndex = 35
         Me.ListViewMenu.UseCompatibleStateImageBehavior = False
         '
@@ -107,10 +105,9 @@ Partial Class pedido2
         Me.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.Location = New System.Drawing.Point(109, 384)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAgregar.Location = New System.Drawing.Point(82, 312)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(88, 79)
+        Me.btnAgregar.Size = New System.Drawing.Size(66, 64)
         Me.btnAgregar.TabIndex = 34
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -120,10 +117,9 @@ Partial Class pedido2
         '
         Me.Button18.BackColor = System.Drawing.Color.Yellow
         Me.Button18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button18.Location = New System.Drawing.Point(1033, 29)
-        Me.Button18.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button18.Location = New System.Drawing.Point(775, 24)
         Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(100, 69)
+        Me.Button18.Size = New System.Drawing.Size(75, 56)
         Me.Button18.TabIndex = 32
         Me.Button18.Text = "Bebidas"
         Me.Button18.UseVisualStyleBackColor = False
@@ -132,10 +128,9 @@ Partial Class pedido2
         '
         Me.Button19.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button19.Location = New System.Drawing.Point(936, 29)
-        Me.Button19.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button19.Location = New System.Drawing.Point(702, 24)
         Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(100, 69)
+        Me.Button19.Size = New System.Drawing.Size(75, 56)
         Me.Button19.TabIndex = 31
         Me.Button19.Text = "Cervezas"
         Me.Button19.UseVisualStyleBackColor = False
@@ -144,10 +139,9 @@ Partial Class pedido2
         '
         Me.Button20.BackColor = System.Drawing.Color.Yellow
         Me.Button20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button20.Location = New System.Drawing.Point(840, 29)
-        Me.Button20.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button20.Location = New System.Drawing.Point(630, 24)
         Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(100, 69)
+        Me.Button20.Size = New System.Drawing.Size(75, 56)
         Me.Button20.TabIndex = 30
         Me.Button20.Text = "Fritas"
         Me.Button20.UseVisualStyleBackColor = False
@@ -156,10 +150,9 @@ Partial Class pedido2
         '
         Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button21.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button21.Location = New System.Drawing.Point(742, 29)
-        Me.Button21.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button21.Location = New System.Drawing.Point(556, 24)
         Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(100, 69)
+        Me.Button21.Size = New System.Drawing.Size(75, 56)
         Me.Button21.TabIndex = 29
         Me.Button21.Text = "Hamb"
         Me.Button21.UseVisualStyleBackColor = False
@@ -168,10 +161,9 @@ Partial Class pedido2
         '
         Me.Button22.BackColor = System.Drawing.Color.Yellow
         Me.Button22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button22.Location = New System.Drawing.Point(645, 29)
-        Me.Button22.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button22.Location = New System.Drawing.Point(484, 24)
         Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(100, 69)
+        Me.Button22.Size = New System.Drawing.Size(75, 56)
         Me.Button22.TabIndex = 28
         Me.Button22.Text = "Pizzas"
         Me.Button22.UseVisualStyleBackColor = False
@@ -183,10 +175,9 @@ Partial Class pedido2
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(13, 384)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Location = New System.Drawing.Point(10, 312)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(88, 79)
+        Me.Button3.Size = New System.Drawing.Size(66, 64)
         Me.Button3.TabIndex = 27
         Me.Button3.Text = "Borrar Item"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -195,21 +186,19 @@ Partial Class pedido2
         'TextBoxTotal
         '
         Me.TextBoxTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxTotal.Location = New System.Drawing.Point(436, 393)
-        Me.TextBoxTotal.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxTotal.Location = New System.Drawing.Point(327, 319)
         Me.TextBoxTotal.Multiline = True
         Me.TextBoxTotal.Name = "TextBoxTotal"
-        Me.TextBoxTotal.Size = New System.Drawing.Size(160, 35)
+        Me.TextBoxTotal.Size = New System.Drawing.Size(121, 29)
         Me.TextBoxTotal.TabIndex = 26
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft New Tai Lue", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(356, 395)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(267, 321)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 33)
+        Me.Label1.Size = New System.Drawing.Size(56, 26)
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "Total"
         '
@@ -224,27 +213,25 @@ Partial Class pedido2
         'ListViewPedido
         '
         Me.ListViewPedido.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader3, Me.ColumnHeader4})
-        Me.ListViewPedido.Location = New System.Drawing.Point(13, 13)
-        Me.ListViewPedido.Margin = New System.Windows.Forms.Padding(4)
+        Me.ListViewPedido.Location = New System.Drawing.Point(10, 11)
         Me.ListViewPedido.Name = "ListViewPedido"
-        Me.ListViewPedido.Size = New System.Drawing.Size(583, 363)
+        Me.ListViewPedido.Size = New System.Drawing.Size(438, 296)
         Me.ListViewPedido.TabIndex = 24
         Me.ListViewPedido.UseCompatibleStateImageBehavior = False
         '
         'Menu
         '
-        Me.Menu.Location = New System.Drawing.Point(606, 13)
-        Me.Menu.Margin = New System.Windows.Forms.Padding(4)
+        Me.Menu.Location = New System.Drawing.Point(454, 11)
         Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(544, 105)
+        Me.Menu.Size = New System.Drawing.Size(408, 85)
         Me.Menu.TabIndex = 33
         Me.Menu.TabStop = False
         '
         'pedido2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1164, 584)
+        Me.ClientSize = New System.Drawing.Size(873, 474)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CbNomEpleado)
         Me.Controls.Add(Me.txtNombreEmpleado)
@@ -260,8 +247,9 @@ Partial Class pedido2
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ListViewPedido)
         Me.Controls.Add(Me.Menu)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "pedido2"
-        Me.Text = "pedido2"
+        Me.Text = "MESA 1"
         CType(Me.Menu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -172,9 +172,9 @@ Partial Class inicio
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Location = New System.Drawing.Point(532, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(152, 22)
+        Me.Label1.Size = New System.Drawing.Size(253, 22)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "MAXIREST- 2021"
+        Me.Label1.Text = "ELIMA GASTRONOMIC- 2021"
         '
         'inicio
         '
