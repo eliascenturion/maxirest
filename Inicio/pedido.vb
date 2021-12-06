@@ -45,6 +45,7 @@ Public Class pedido
         Me.BackColor = Color.FromArgb(228, 227, 228)
         cargarEmlpeados()
         TextBoxTotal.Text = 0
+        TextBoxTotal.Enabled = False
         CbNomEpleado.Enabled = True
     End Sub
     Private Sub ListViewMenu_DoubleClick(sender As Object, e As EventArgs) Handles ListViewMenu.DoubleClick
