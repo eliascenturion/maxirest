@@ -46,6 +46,7 @@ Public Class pedido3
         cargarEmlpeados()
         TextBoxTotal.Text = 0
         TextBoxTotal.Enabled = False
+        CbNomEpleado.Enabled = True
     End Sub
     Private Sub ListViewMenu_DoubleClick(sender As Object, e As EventArgs) Handles ListViewMenu.DoubleClick
         If ListViewMenu.Items.Count > 0 Then
